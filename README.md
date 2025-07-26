@@ -1,0 +1,1 @@
+# plugins-haayal-ai-slug-translator
