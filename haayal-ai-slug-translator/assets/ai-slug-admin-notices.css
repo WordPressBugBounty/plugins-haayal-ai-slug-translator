@@ -1,0 +1,19 @@
+.haayal-notice {
+    display: flex; 
+    align-items: center; 
+    gap: 22px;
+    padding: 12px 40px;
+}
+
+.haayal-notice-logo {
+    width: 65px; 
+    height: auto; 
+}
+
+.haayal-notice p {
+    margin: 0;
+}
+
+.haayal-review-notice a.button {
+	display: inline-block;
+}

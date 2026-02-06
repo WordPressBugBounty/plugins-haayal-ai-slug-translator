@@ -12,6 +12,8 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
  */
 delete_option( 'ai_slug_translator_settings' );
 delete_option( '_ai_slug_error_log' );
+delete_option( 'haayal_slug_translator_dismissed_notice' );
+delete_option( 'haayal_dismissed_review_notice' );
 
 
  /**

@@ -2,8 +2,8 @@
 Contributors: elchananlevavi
 Tags: SEO, slugs, translation, OpenAI, multilingual
 Requires at least: 5.0
-Tested up to: 6.8
-Stable tag: 0.7.3
+Tested up to: 6.9
+Stable tag: 0.7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,7 +13,7 @@ Automatically translate non-English slugs into clean, user-friendly English to i
 
 **Why Use This Plugin?**
 
-When sharing links with titles in non-English languages (e.g., Hebrew, Arabic, Chinese, or Russian) on platforms like Facebook or WhatsApp, the URLs often turn into a confusing string of codes. This makes your links look unprofessional, reduces click-through rates, and can harm your SEO.
+When sharing links with titles in non-English languages (e.g. Hebrew, Korean, Japanese, Hindi, Arabic, Chinese, or Russian) on platforms like Facebook or WhatsApp, the URLs often turn into a confusing string of codes. This makes your links look unprofessional, reduces click-through rates, and can harm your SEO.
 
 The Automatic Slug Translator fixes this issue by seamlessly translating slugs into concise English. Not only does this make your links visually appealing and user-friendly, but it also enhances your website's search engine performance with clear, descriptive URLs.
 
@@ -100,7 +100,7 @@ When using the free built-in translation quota, your post titles, term names, an
 ---
 
 = Can I use the plugin without an OpenAI account? =
-Yes! Each site gets **100 free translations**. You can start using the plugin right away — no API key or registration required.
+Yes! Each site gets **100 free translations**. You can start using the plugin right away - no API key or registration required.
 
 Once your free quota is used up, you'll see a notice inviting you to enter your own API key to continue.
 
@@ -122,7 +122,7 @@ The plugin is designed to translate slugs automatically when new content is crea
 ---
 
 = What happens if I deactivate or delete the plugin? =
-No worries — slugs that were already translated will stay exactly as they are. Your links won’t break, and your content will remain accessible. However, new slugs won’t be translated automatically until you reinstall or reactivate the plugin.
+No worries - slugs that were already translated will stay exactly as they are. Your links won’t break, and your content will remain accessible. However, new slugs won’t be translated automatically until you reinstall or reactivate the plugin.
 
 == Screenshots ==
 
@@ -161,3 +161,9 @@ Improved architecture:
 - Improved log message when translation quota is exceeded
 = 0.7.3 =
 - Minor bug fixes.
+= 0.7.4 =
+- Bug fix: Resolved fatal error that could occur when saving a post without a title.
+- Bug fix: Prevented duplicate slug generation caused by both autosave and manual save triggering the translation process.
+- Added a welcome admin notice after plugin activation, guiding users to configure which content types to translate.
+- Added a friendly prompt inviting users to rate the plugin on the WordPress plugin directory.
+- Tested and confirmed compatibility with WordPress 6.9.
