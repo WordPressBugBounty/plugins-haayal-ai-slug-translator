@@ -2,8 +2,8 @@
 Contributors: elchananlevavi
 Tags: SEO, slugs, translation, OpenAI, multilingual
 Requires at least: 5.0
-Tested up to: 6.9
-Stable tag: 0.7.4
+Tested up to: 7.0
+Stable tag: 1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,7 +13,7 @@ Automatically translate non-English slugs into clean, user-friendly English to i
 
 **Why Use This Plugin?**
 
-When sharing links with titles in non-English languages (e.g. Hebrew, Korean, Japanese, Hindi, Arabic, Chinese, or Russian) on platforms like Facebook or WhatsApp, the URLs often turn into a confusing string of codes. This makes your links look unprofessional, reduces click-through rates, and can harm your SEO.
+When sharing links with titles in non-English languages (e.g., Hebrew, Arabic, Hindi, Chinese, or Russian) on platforms like Facebook or WhatsApp, the URLs often turn into a confusing string of codes. This makes your links look unprofessional, reduces click-through rates, and can harm your SEO.
 
 The Automatic Slug Translator fixes this issue by seamlessly translating slugs into concise English. Not only does this make your links visually appealing and user-friendly, but it also enhances your website's search engine performance with clear, descriptive URLs.
 
@@ -32,14 +32,22 @@ This small adjustment can have a big impact on how your content is shared and di
 
 **Clean English Slugs — Instantly, with AI**
 
-No setup required. This plugin uses AI to automatically translate your post titles and terms into elegant, SEO-friendly English slugs.  
-You get **100 translations for free**, and then you can connect your own OpenAI account to keep going.
+No setup required. This plugin uses AI to automatically translate your post titles and terms into elegant, SEO-friendly English slugs.
+You get **100 translations for free**, and then you can connect your own AI account (GPT, Claude or Gemini) to keep going.
+
+**Bulk Translation**
+
+Already have existing content with non-English slugs? Use the Bulk Translation feature to translate them all at once - with optional 301 redirects to keep your SEO intact. Review and manage redirects anytime in the dedicated Redirects tab.
+
+**WordPress 7.0+ Connectors Support**
+
+On WordPress 7.0 and above, the plugin integrates with the built-in Connectors API - connect any supported AI provider directly from WordPress settings, no API key needed in the plugin.
 
 == Installation ==
 
 1. Install the plugin through the WordPress admin plugins screen or upload the plugin files to `/wp-content/plugins/` directory.
 2. Activate the plugin through the "Plugins" screen in WordPress.
-3. Configure the plugin in the settings screen under "Slug Translator".
+3. Configure the plugin in the settings screen under "Settings > Slug Translator".
 
 == Usage ==
 
@@ -50,10 +58,18 @@ You get **100 translations for free**, and then you can connect your own OpenAI 
 
 ### Want More? Connect Your Own API Key
 
-After using your 100 free translations, continue seamlessly by connecting your own [OpenAI](https://openai.com) account:
-  1. [Sign up for OpenAI](https://openai.com/signup) and add billing details
-  2. Generate an API key from the [API Keys page](https://platform.openai.com/account/api-keys)
-  3. Paste the API key into the plugin settings
+After using your 100 free translations, you can continue seamlessly by connecting your own AI provider:
+
+**Option 1 – Connect OpenAI directly:**
+
+1. Sign up for OpenAI and add billing details
+2. Generate an API key from the API Keys page
+3. Paste the API key into the plugin settings
+
+**Option 2 – Use WordPress Connectors (if supported on your site):**
+If your WordPress installation supports AI Connectors, you can connect other AI providers as well. Simply configure your preferred provider via the Connectors interface and the plugin will use it automatically.
+
+This gives you flexibility to work with different AI services beyond OpenAI.
 
 ### Configuration
 
@@ -71,7 +87,7 @@ After using your 100 free translations, continue seamlessly by connecting your o
 
 == Costs ==
 
-The plugin is completely free to use, and includes 100 slug translations at no cost. After you’ve used the free quota you’ll need a paid OpenAI subscription to continue.
+The plugin is completely free to use, and includes 100 slug translations at no cost. After you’ve used the free quota you’ll need a paid AI subscription to continue.
 
 - **Affordable Rates:** For just $1, you can translate between 10,000–20,000 titles, depending on their length.
 - **[Check OpenAI Pricing](https://openai.com/pricing):** Ensure your account is funded before use.
@@ -94,7 +110,7 @@ When using the free built-in translation quota, your post titles, term names, an
 - Check if you've used up your free translation quota.
 - Ensure you have enabled the relevant post types and taxonomies in the plugin settings.
 - Verify that your API key is valid and correctly configured.
-- Confirm your OpenAI account has an active payment method and sufficient funds.
+- Make sure your connected AI provider account has an active payment method and sufficient usage credits or balance.
 - Check for potential service disruptions on OpenAI's [status page](https://status.openai.com), as temporary downtime may cause translation issues.
 
 ---
@@ -112,37 +128,63 @@ Your remaining quota is displayed in the plugin’s settings screen. Once you re
 ---
 
 = What happens when I run out of free translations? =
-Slug translation will stop unless you connect your OpenAI API key. You’ll see a message in the settings area with instructions on how to continue using the plugin.
+Slug translation will stop unless you connect your AI provider API key. You’ll see a message in the settings area with instructions on how to continue using the plugin.
 
 ---
 
 = Can I Translate Slugs in Bulk? =
-The plugin is designed to translate slugs automatically when new content is created. It doesn’t support bulk translation of existing posts or terms, as changing many URLs at once without setting proper redirects can harm your site’s SEO and break existing links.
+Yes! The Bulk Translation tab lets you translate existing post and term slugs in batches. The plugin can also create 301 redirects automatically to preserve SEO. You can review and manage all redirects in the dedicated Redirects tab.
 
 ---
 
 = What happens if I deactivate or delete the plugin? =
 No worries - slugs that were already translated will stay exactly as they are. Your links won’t break, and your content will remain accessible. However, new slugs won’t be translated automatically until you reinstall or reactivate the plugin.
 
+If you created 301 redirects during bulk slug updates, those redirects may stop working once the plugin is deactivated or removed, so you should recreate them using another method.
+
 == Screenshots ==
 
-1. The plugin’s settings screen, where you can configure options and (optionally) enter your OpenAI API key.
+1. The plugin’s settings screen, where you can set your preferences and choose a translation method.
 2. Automatic slug translation in the Gutenberg editor — just type your title and the slug is generated.
 3. Automatic slug translation in the Classic Editor — the translated slug appears below the title.
+4. Automatic slug translation for a category term.
+5. Bulk translation of existing slugs.
+6. Managing 301 redirects for updated URLs.
 
 == Changelog ==
 
-= 0.6 =
-- Initial release with support for automatic slug translation using OpenAI.
-= 0.6.1 =
-- Minor bug fixes and new name: HaAyal AI Slug Translator (HaAyal prefix).
-= 0.6.2 =
+= 1.0 =
+- New: Bulk Translation - translate existing post and term slugs in batches with progress tracking.
+- New: Automatic 301 redirects during bulk translation to preserve SEO.
+- New: Redirects management tab - view, filter, and remove redirect rules.
+- New: WordPress 7.0+ Connectors API support - use any AI provider configured in WordPress settings.
+- New: Regenerate translation option added
+- Enhancement: Improved Gutenberg support
+- Enhancement: Added status indicators for taxonomy terms
+- Enhancement: Settings and tools now organized in a tabbed interface
+- Enhancement: Redesigned error log for improved readability
+- Minor bug fixes and security improvements.
+- Tested and confirmed compatibility with WordPress 7.0.
+
+= 0.7.4 =
+- Bug fix: Resolved fatal error that could occur when saving a post without a title.
+- Bug fix: Prevented duplicate slug generation caused by both autosave and manual save triggering the translation process.
+- Added a welcome admin notice after plugin activation, guiding users to configure which content types to translate.
+- Added a friendly prompt inviting users to rate the plugin on the WordPress plugin directory.
+- Tested and confirmed compatibility with WordPress 6.9.
+
+= 0.7.3 =
 - Minor bug fixes.
-= 0.6.3 =
-Added automatic API key validation upon saving settings
-Displays admin notices for API status: valid, invalid, or insufficient quota
-Improved error handling for API communication
-Minor UI improvements and clearer helper text
+
+= 0.7.2 =
+- New name: Ailo - AI Slug Translator.
+- Updated class prefix to `Haayal` for consistency and clarity
+- Simplified settings page UI for improved usability
+- Improved log message when translation quota is exceeded
+
+= 0.7.1 =
+- Refined usage guide for clarity and accuracy.
+
 = 0.7 =
 Introduced free translation (no OpenAI account required):
 - Each domain receives 100 free translations to test the plugin
@@ -152,18 +194,22 @@ Introduced free translation (no OpenAI account required):
 Improved architecture:
 - Responses now include remaining translation count
 - Slug translation method is dynamically selected based on settings and availability
-= 0.7.1 =
-- Refined usage guide for clarity and accuracy.
-= 0.7.2 =
-- New name: Ailo - AI Slug Translator.
-- Updated class prefix to `Haayal` for consistency and clarity
-- Simplified settings page UI for improved usability
-- Improved log message when translation quota is exceeded
-= 0.7.3 =
+
+= 0.6.3 =
+Added automatic API key validation upon saving settings
+Displays admin notices for API status: valid, invalid, or insufficient quota
+Improved error handling for API communication
+Minor UI improvements and clearer helper text
+
+= 0.6.2 =
 - Minor bug fixes.
-= 0.7.4 =
-- Bug fix: Resolved fatal error that could occur when saving a post without a title.
-- Bug fix: Prevented duplicate slug generation caused by both autosave and manual save triggering the translation process.
-- Added a welcome admin notice after plugin activation, guiding users to configure which content types to translate.
-- Added a friendly prompt inviting users to rate the plugin on the WordPress plugin directory.
-- Tested and confirmed compatibility with WordPress 6.9.
+
+= 0.6.1 =
+- Minor bug fixes and new name: HaAyal AI Slug Translator (HaAyal prefix).
+
+= 0.6 =
+- Initial release with support for automatic slug translation using OpenAI.
+
+
+
+

@@ -3,1135 +3,1109 @@
 # This file is distributed under the same license as the plugin.
 # Elchanan Levavi <elchanan@ha-ayal.co.il>, 2025.
 #
-msgid msgstr ""
+msgid ""
+msgstr ""
 "Project-Id-Version: Ailo - AI Slug Translator 1.0\n"
 "POT-Creation-Date: 2026-03-25 10:36\n"
-"Language: \n"
+"PO-Revision-Date: 2026-06-03 14:52+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: he_IL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: \n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==2 ? 1 : n>10 && n%10==0 ? 2 : 3);\n"
+"X-Generator: Poedit 3.9\n"
 
-#: haayal-ai-slug-translator.php:74
-#: includes/class-ai-slug-admin-page.php:163
-#: includes/class-ai-slug-bulk.php:143
-#: includes/class-ai-slug-settings.php:101
+#: haayal-ai-slug-translator.php:74 includes/class-ai-slug-admin-page.php:163
+#: includes/class-ai-slug-bulk.php:143 includes/class-ai-slug-settings.php:101
 msgid "Settings"
-msgstr ""
+msgstr "הגדרות"
 
 #: haayal-ai-slug-translator.php:117
 msgid "Are you sure?"
-msgstr ""
+msgstr "האם אתה בטוח?"
 
 #: haayal-ai-slug-translator.php:121
 #, php-format
 msgid "You have %d active 301 redirect rules created by this plugin. Deactivating will disable all redirects, which may cause 404 errors and affect your SEO."
-msgstr ""
+msgstr "יש לך %d כללי הפניה 301 פעילים שנוצרו על ידי תוסף זה. ביטול ההפעלה ישבית את כל ההפניות, מה שעלול לגרום לשגיאות 404 ולהשפיע על ה-SEO שלך."
 
 #: haayal-ai-slug-translator.php:125
 msgid "Yes, deactivate"
-msgstr ""
+msgstr "כן, בטל הפעלה"
 
-#: haayal-ai-slug-translator.php:126
-#: includes/class-ai-slug-log.php:153
+#: haayal-ai-slug-translator.php:126 includes/class-ai-slug-log.php:153
 #: includes/class-ai-slug-redirects.php:81
 msgid "Cancel"
-msgstr ""
+msgstr "ביטול"
 
 #: includes/class-ai-slug-admin-page.php:25
 #: includes/class-ai-slug-admin-page.php:26
 msgid "AI Slug Translator"
-msgstr ""
+msgstr "מתרגם כתובות עם AI"
 
 #: includes/class-ai-slug-admin-page.php:34
 #: includes/class-ai-slug-admin-page.php:35
 msgid "Bulk Translate Slugs"
-msgstr ""
+msgstr "תרגום כתובות בבת אחת"
 
 #: includes/class-ai-slug-admin-page.php:164
 #: includes/class-ai-slug-bulk.php:130
 msgid "Bulk Translation"
-msgstr ""
+msgstr "תרגום בבת אחת"
 
 #: includes/class-ai-slug-admin-page.php:165
 #: includes/class-ai-slug-redirects.php:98
 msgid "Redirects"
-msgstr ""
+msgstr "הפניות"
 
-#: includes/class-ai-slug-admin-page.php:166
-#: includes/class-ai-slug-log.php:104
+#: includes/class-ai-slug-admin-page.php:166 includes/class-ai-slug-log.php:104
 msgid "Error Log"
-msgstr ""
-
+msgstr "יומן שגיאות"
 
 #: includes/class-ai-slug-admin-page.php:182
 msgid "AI slug translator"
-msgstr ""
+msgstr "מתרגם כתובות עם AI"
 
 #: includes/class-ai-slug-admin-page.php:201
 msgid "Ailo robot"
-msgstr ""
+msgstr "רובוט Ailo"
 
 #: includes/class-ai-slug-admin-page.php:203
 #: includes/class-ai-slug-notices.php:192
 msgid "Ailo - AI Slug Translator"
-msgstr ""
+msgstr "Ailo - מתרגם כתובות עם AI"
 
 #: includes/class-ai-slug-admin-page.php:208
 #, php-format
 msgid "So far, %s slugs have been translated using this plugin!"
-msgstr ""
+msgstr "עד כה תירגמנו לך, %s כתובות!"
 
 #: includes/class-ai-slug-admin-page.php:247
 msgid "Developed by Elchanan Levavi."
-msgstr ""
+msgstr "פותח על ידי אלחנן לבבי."
 
-#: includes/class-ai-slug-bulk.php:90
-#: includes/class-ai-slug-bulk.php:189
+#: includes/class-ai-slug-bulk.php:90 includes/class-ai-slug-bulk.php:189
 msgid "Translate All"
-msgstr ""
+msgstr "לתרגם הכל"
 
-#: includes/class-ai-slug-bulk.php:91
-#: includes/class-ai-slug-bulk.php:192
+#: includes/class-ai-slug-bulk.php:91 includes/class-ai-slug-bulk.php:192
 msgid "Save All"
-msgstr ""
+msgstr "לשמור הכל"
 
-#: includes/class-ai-slug-bulk.php:92
-#: includes/class-ai-slug-bulk.php:195
+#: includes/class-ai-slug-bulk.php:92 includes/class-ai-slug-bulk.php:195
 msgid "Stop"
-msgstr ""
+msgstr "לעצור"
 
 #: includes/class-ai-slug-bulk.php:93
 msgid "Keep Original"
-msgstr ""
+msgstr "להשאיר את המקורית"
 
 #: includes/class-ai-slug-bulk.php:94
 msgid "Exclude from translation"
-msgstr ""
+msgstr "להחריג מתרגום"
 
-#: includes/class-ai-slug-bulk.php:95
-#: includes/class-ai-slug-bulk.php:115
+#: includes/class-ai-slug-bulk.php:95 includes/class-ai-slug-bulk.php:115
 msgid "Restore"
-msgstr ""
+msgstr "לשחזר"
 
 #: includes/class-ai-slug-bulk.php:96
 msgid "Translating..."
-msgstr ""
+msgstr "מתרגם..."
 
 #: includes/class-ai-slug-bulk.php:97
 msgid "Saving..."
-msgstr ""
+msgstr "שומר..."
 
 #: includes/class-ai-slug-bulk.php:98
 msgid "No items with non-Latin slugs found."
-msgstr ""
+msgstr "לא נמצאו פריטים עם כתובות שאינן באותיות לטיניות."
 
 #: includes/class-ai-slug-bulk.php:99
 msgid "Loading items..."
-msgstr ""
+msgstr "טוען פריטים..."
 
 #: includes/class-ai-slug-bulk.php:100
 msgid "Error"
-msgstr ""
+msgstr "שגיאה"
 
 #: includes/class-ai-slug-bulk.php:101
 msgid "translated"
-msgstr ""
+msgstr "תורגם"
 
 #: includes/class-ai-slug-bulk.php:102
 msgid "saved"
-msgstr ""
+msgstr "נשמר"
 
 #: includes/class-ai-slug-bulk.php:103
 msgid "failed"
-msgstr ""
+msgstr "נכשל"
 
 #: includes/class-ai-slug-bulk.php:104
 msgid "Stopped by user."
-msgstr ""
+msgstr "הופסק על ידי המשתמש."
 
 #: includes/class-ai-slug-bulk.php:105
 msgid "Complete!"
-msgstr ""
+msgstr "הושלם!"
 
 #: includes/class-ai-slug-bulk.php:106
 msgid "These won't be saved until you click Save All. You can also edit them manually before saving."
-msgstr ""
+msgstr "הם לא יישמרו עד שתלחצו על לשמור הכל. אפשר גם לערוך אותם ידנית לפני השמירה."
 
 #: includes/class-ai-slug-bulk.php:107
 msgid "No slugs were translated. Check the Error Log tab for more details."
-msgstr ""
+msgstr "לא תורגמו כתובות. יש לבדוק את יומן השגיאות לפרטים נוספים."
 
 #: includes/class-ai-slug-bulk.php:108
 msgid "You've used up your free quota, so we've paused translation for now. Connect an API key or use Connectors to keep going."
-msgstr ""
+msgstr "ניצלת את מכסת התרגומים החינמית, ולכן השהינו את התרגום לעת עתה. אפשר לחבר מפתח API או להשתמש ב-Connectors כדי להמשיך."
 
 #: includes/class-ai-slug-bulk.php:109
 msgid "Your free translation quota has been used up. To continue translating, please add your own OpenAI API key or use a Connector in the Settings tab."
-msgstr ""
+msgstr "מכסת התרגומים החינמית שלך נוצלה. כדי להמשיך לתרגם, נא להוסיף מפתח API של OpenAI משלך או השתמש ב-Connector בלשונית ההגדרות."
 
 #: includes/class-ai-slug-bulk.php:110
 msgid "Select a post type or taxonomy to load items."
-msgstr ""
+msgstr "יש לבחור סוג פוסט או טקסונומיה כדי לטעון פריטים."
 
 #: includes/class-ai-slug-bulk.php:111
 msgid "of"
-msgstr ""
+msgstr "מתוך"
 
 #: includes/class-ai-slug-bulk.php:112
 msgid "redirects created"
-msgstr ""
+msgstr "הפניות נוצרו"
 
-#: includes/class-ai-slug-bulk.php:113
-#: includes/class-ai-slug-bulk.php:212
+#: includes/class-ai-slug-bulk.php:113 includes/class-ai-slug-bulk.php:212
 msgid "Show excluded items"
-msgstr ""
+msgstr "הצגת פריטים מוחרגים"
 
 #: includes/class-ai-slug-bulk.php:114
 msgid "Hide excluded items"
-msgstr ""
+msgstr "הסתרת פריטים מוחרגים"
 
 #: includes/class-ai-slug-bulk.php:116
 msgid "Return this item to the translation list"
-msgstr ""
+msgstr "החזרת פריט זה לרשימת התרגום"
 
 #: includes/class-ai-slug-bulk.php:117
 msgid "No excluded items for this type."
-msgstr ""
+msgstr "אין פריטים מוחרגים עבור סוג זה."
 
 #: includes/class-ai-slug-bulk.php:118
 msgid "Request timed out, please try again"
-msgstr ""
+msgstr "הבקשה נכשלה כי הזמן שהוקצב לה עבר, יש לנסות שוב"
 
 #: includes/class-ai-slug-bulk.php:119
 msgid "items"
-msgstr ""
+msgstr "פריטים"
 
 #: includes/class-ai-slug-bulk.php:120
 #, php-format
 msgid "Page %1$s of %2$s"
-msgstr ""
+msgstr "עמוד %1$s מתוך %2$s"
 
 #: includes/class-ai-slug-bulk.php:131
 msgid "Translate existing non-English slugs into clean English URLs. Select a post type or taxonomy to see all items with non-Latin slugs."
-msgstr ""
+msgstr "תרגמו כתובות קיימות שאינן באנגלית לכתובות URL נקיות באנגלית. בחרו סוג פוסט או טקסונומיה כדי לראות את כל הפריטים עם כתובות שאינן באותיות לטיניות."
 
 #: includes/class-ai-slug-bulk.php:138
 msgid "Select type:"
-msgstr ""
+msgstr "בחירת סוג:"
 
 #: includes/class-ai-slug-bulk.php:139
 msgid "Info"
-msgstr ""
+msgstr "מידע"
 
 #: includes/class-ai-slug-bulk.php:142
 #, php-format
 msgid "Only post types and taxonomies enabled in %s are listed here. If you don't see what you're looking for, enable it there first."
-msgstr ""
+msgstr "רק סוגי פוסטים וטקסונומיות שמופעלים ב-%s מוצגים כאן. אם לא מצאת כאן את מה שחיפשת כדאי קודם לגשת ולהגדיר שם."
 
 #: includes/class-ai-slug-bulk.php:148
 msgid "— Choose —"
-msgstr ""
+msgstr "- בחירה -"
 
 #: includes/class-ai-slug-bulk.php:156
 msgid "Create 301 redirects for changed URLs"
-msgstr ""
+msgstr "ליצור הפניות 301 עבור כתובות URL שהשתנו"
 
 #: includes/class-ai-slug-bulk.php:158
 msgid "301 redirects are created automatically, but may not cover all edge cases. Please review them after saving to avoid potential SEO issues."
-msgstr ""
+msgstr "הפניות 301 נוצרות אוטומטית, אך ייתכן שלא יעבדו בצורה מהימנה בכל המקרים. כדאי לבדוק אותן לאחר השמירה כדי להימנע מבעיות SEO אפשריות."
 
 #: includes/class-ai-slug-bulk.php:158
 msgid "Redirects are disabled — visitors following old URLs may encounter 404 errors. If redirects are not handled elsewhere, consider enabling them above to help prevent broken links."
-msgstr ""
+msgstr "הפניות מושבתות - מבקרים שעוקבים אחרי כתובות URL ישנות עלולים להיתקל בשגיאות 404. אם הפניות אינן מטופלות במקום אחר, כדאי לשקול להפעיל אותן כדי למנוע קישורים שבורים."
 
 #: includes/class-ai-slug-bulk.php:163
 msgid "You are using the free plan. Remaining translations:"
-msgstr ""
+msgstr "התוכנית החינמית מופעלת. תרגומים שנותרו:"
 
 #: includes/class-ai-slug-bulk.php:172
 msgid "Items available for slug translation"
-msgstr ""
+msgstr "פריטים זמינים לתרגום כתובת"
 
-#: includes/class-ai-slug-bulk.php:175
-#: includes/class-ai-slug-bulk.php:222
-#: includes/class-ai-slug-log.php:113
-#: includes/class-ai-slug-redirects.php:120
+#: includes/class-ai-slug-bulk.php:175 includes/class-ai-slug-bulk.php:222
+#: includes/class-ai-slug-log.php:113 includes/class-ai-slug-redirects.php:120
 msgid "Title"
-msgstr ""
+msgstr "כותרת"
 
-#: includes/class-ai-slug-bulk.php:176
-#: includes/class-ai-slug-bulk.php:223
+#: includes/class-ai-slug-bulk.php:176 includes/class-ai-slug-bulk.php:223
 msgid "Current Slug"
-msgstr ""
+msgstr "כתובת נוכחית"
 
 #: includes/class-ai-slug-bulk.php:177
 msgid "New Slug"
-msgstr ""
+msgstr "כתובת חדשה"
 
-#: includes/class-ai-slug-bulk.php:178
-#: includes/class-ai-slug-bulk.php:224
+#: includes/class-ai-slug-bulk.php:178 includes/class-ai-slug-bulk.php:224
 #: includes/class-ai-slug-redirects.php:125
 msgid "Actions"
-msgstr ""
+msgstr "פעולות"
 
 #: includes/class-ai-slug-bulk.php:215
 msgid "Excluded Items"
-msgstr ""
+msgstr "פריטים מוחרגים"
 
 #: includes/class-ai-slug-bulk.php:216
 msgid "These items were excluded from translation. Click Restore to include them in the translation list again."
-msgstr ""
+msgstr "פריטים אלה הוחרגו מתרגום. לחיצה על \"לשחזר\" תכלול אותם שוב ברשימת התרגום."
 
 #: includes/class-ai-slug-bulk.php:219
 msgid "Items excluded from slug translation"
-msgstr ""
+msgstr "פריטים שהוחרגו מתרגום כתובת"
 
-#: includes/class-ai-slug-bulk.php:242
-#: includes/class-ai-slug-bulk.php:276
-#: includes/class-ai-slug-bulk.php:308
-#: includes/class-ai-slug-bulk.php:362
-#: includes/class-ai-slug-bulk.php:405
-#: includes/class-ai-slug-bulk.php:541
-#: includes/class-ai-slug-bulk.php:625
-#: includes/class-ai-slug-redirects.php:338
+#: includes/class-ai-slug-bulk.php:242 includes/class-ai-slug-bulk.php:276
+#: includes/class-ai-slug-bulk.php:308 includes/class-ai-slug-bulk.php:362
+#: includes/class-ai-slug-bulk.php:405 includes/class-ai-slug-bulk.php:541
+#: includes/class-ai-slug-bulk.php:625 includes/class-ai-slug-redirects.php:338
 #: includes/class-ai-slug-redirects.php:447
 #: includes/class-ai-slug-redirects.php:479
 msgid "Permission denied."
-msgstr ""
+msgstr "הגישה נדחתה."
 
-#: includes/class-ai-slug-bulk.php:250
-#: includes/class-ai-slug-bulk.php:284
+#: includes/class-ai-slug-bulk.php:250 includes/class-ai-slug-bulk.php:284
 #: includes/class-ai-slug-bulk.php:576
 msgid "Invalid item."
-msgstr ""
+msgstr "פריט לא חוקי."
 
-#: includes/class-ai-slug-bulk.php:315
-#: includes/class-ai-slug-bulk.php:415
+#: includes/class-ai-slug-bulk.php:315 includes/class-ai-slug-bulk.php:415
 msgid "Invalid source."
-msgstr ""
+msgstr "מקור לא חוקי."
 
 #: includes/class-ai-slug-bulk.php:554
 msgid "No items to translate."
-msgstr ""
+msgstr "אין פריטים לתרגום."
 
-#: includes/class-ai-slug-bulk.php:586
-#: includes/class-ai-slug-bulk.php:608
+#: includes/class-ai-slug-bulk.php:586 includes/class-ai-slug-bulk.php:608
 msgid "Quota exhausted."
-msgstr ""
+msgstr "המכסה נוצלה."
 
 #: includes/class-ai-slug-bulk.php:608
 msgid "Translation failed."
-msgstr ""
+msgstr "התרגום נכשל."
 
 #: includes/class-ai-slug-bulk.php:633
 msgid "No items to save."
-msgstr ""
+msgstr "אין פריטים לשמירה."
 
 #: includes/class-ai-slug-bulk.php:654
 msgid "Invalid item data."
-msgstr ""
+msgstr "נתוני פריט לא חוקיים."
 
 #: includes/class-ai-slug-bulk.php:668
 msgid "Unknown source type."
-msgstr ""
+msgstr "סוג מקור לא ידוע."
 
 #: includes/class-ai-slug-bulk.php:703
 msgid "Post not found."
-msgstr ""
+msgstr "הפוסט לא נמצא."
 
-#: includes/class-ai-slug-bulk.php:716
-#: includes/class-ai-slug-bulk.php:813
+#: includes/class-ai-slug-bulk.php:716 includes/class-ai-slug-bulk.php:813
 msgid "Slug is already the same."
-msgstr ""
+msgstr "הכתובת כבר זהה."
 
 #: includes/class-ai-slug-bulk.php:801
 msgid "Term not found."
-msgstr ""
+msgstr "המונח לא נמצא."
 
 #: includes/class-ai-slug-helpers.php:108
 #, php-format
 msgid "Failed to generate slug. Error communicating with OpenAI API: %s"
-msgstr ""
+msgstr "יצירת כתובת נכשלה. שגיאה בתקשורת עם OpenAI API:‏ %s"
 
 #: includes/class-ai-slug-helpers.php:125
 msgid "No response body."
-msgstr ""
+msgstr "אין תוכן תגובה."
 
 #: includes/class-ai-slug-helpers.php:131
 #, php-format
 msgid "Failed to generate slug. API response did not include a valid translation. Response details: %s"
-msgstr ""
+msgstr "יצירת כתובת נכשלה. תגובת ה-API לא כללה תרגום חוקי. פרטי התגובה: %s"
 
 #: includes/class-ai-slug-helpers.php:168
 #, php-format
 msgid "Failed to generate slug. Error contacting proxy server: %s"
-msgstr ""
+msgstr "יצירת כתובת נכשלה. שגיאה ביצירת קשר עם שרת ה-Proxy:‏ %s"
 
 #: includes/class-ai-slug-helpers.php:181
 msgid "Failed to generate slug. Translation skipped — free quota has been used up for this domain."
-msgstr ""
+msgstr "יצירת כתובת נכשלה. התרגום הושהה - המכסה החינמית נוצלה עבור דומיין זה."
 
 #: includes/class-ai-slug-helpers.php:194
 msgid "Failed to generate slug. Proxy response did not include a slug."
-msgstr ""
+msgstr "יצירת כתובת נכשלה. תגובת שרת ה-Proxy לא כללה כתובת."
 
 #: includes/class-ai-slug-helpers.php:217
 msgid "Failed to generate slug. WordPress Connectors API is not available. Please ensure you are running WordPress 7.0 or later."
-msgstr ""
+msgstr "יצירת כתובת נכשלה. ה-API של WordPress Connectors אינו זמין. ודא שאתה מריץ WordPress 7.0 ומעלה."
 
 #: includes/class-ai-slug-helpers.php:237
 #, php-format
 msgid "Failed to generate slug. WordPress Connectors error: %s"
-msgstr ""
+msgstr "יצירת כתובת נכשלה. שגיאת WordPress Connectors:‏ %s"
 
 #: includes/class-ai-slug-helpers.php:247
 msgid "Failed to generate slug. WordPress Connectors returned an empty response."
-msgstr ""
+msgstr "יצירת כתובת נכשלה. WordPress Connectors החזיר תגובה ריקה."
 
 #: includes/class-ai-slug-user-guide.php:14
 msgid "Why to use this plugin?"
-msgstr ""
+msgstr "למה להשתמש בתוסף זה?"
 
 #: includes/class-ai-slug-user-guide.php:15
 msgid "When sharing links with titles in non-English languages, such as Hebrew, Arabic, Chinese, or Russian, on social media platforms like Facebook or WhatsApp, the characters often get transformed into a confusing string of symbols and codes. This not only looks unprofessional but can also discourage users from clicking the link."
-msgstr ""
+msgstr "כשמשתפים קישורים עם כתובות בשפות שאינן אנגלית (כמו עברית, ערבית, סינית או רוסית), בפלטפורמות מדיה חברתית כמו פייסבוק או וואטסאפ, התווים לרוב הופכים לרצף סימנים וקודים מבלבל. זה לא רק נראה לא מקצועי, אלא גם עלול להרתיע משתמשים מללחוץ על הקישור."
 
 #: includes/class-ai-slug-user-guide.php:16
 msgid "The automatic slug converter to English solves this problem seamlessly. It translates the slug into a clear, concise English version, making the link much more user-friendly and visually appealing when shared."
-msgstr ""
+msgstr "ממיר הכתובות האוטומטי לאנגלית פותר את הבעיה בצורה אוטומטית. הוא מתרגם את הכתובת לגרסה אנגלית ברורה ותמציתית, מה שהופך את הקישור לידידותי יותר למשתמש ולמושך ויזואלית כאשר משתפים אותו."
 
 #: includes/class-ai-slug-user-guide.php:17
 msgid "Additionally, the tool shortens long titles, resulting in cleaner and more elegant links. This is not just convenient for sharing but also improves SEO, as search engines prioritize clear and descriptive URLs."
-msgstr ""
+msgstr "בנוסף, הכלי מקצר כותרות ארוכות, מה שמוביל לקישורים נקיים ואלגנטיים יותר. זה לא רק נוח לשיתוף, אלא גם משפר את ה-SEO, מכיוון שמנועי חיפוש נותנים עדיפות לכתובות ברורות."
 
 #: includes/class-ai-slug-user-guide.php:18
 msgid "Example:"
-msgstr ""
+msgstr "דוגמה:"
 
 #: includes/class-ai-slug-user-guide.php:20
 msgid "Original title in Hebrew: איך להשתמש בממיר אוטומטי לסלאג באנגלית"
-msgstr ""
+msgstr "הכותרת המקורית בעברית: איך להשתמש בממיר אוטומטי לסלאג באנגלית"
 
 #: includes/class-ai-slug-user-guide.php:21
 msgid "Page slug: /איך-להשתמש-בממיר-אוטומטי-לסלאג-באנגלית"
-msgstr ""
+msgstr "כתובת הדף: /איך-להשתמש-בממיר-אוטומטי-לסלאג-באנגלית"
 
 #: includes/class-ai-slug-user-guide.php:22
 msgid "Broken URL when shared:"
-msgstr ""
+msgstr "כתובת URL שבורה כשמשתפים:"
 
 #: includes/class-ai-slug-user-guide.php:23
 msgid "Clean English slug: /how-to-use-automatic-slug-converter"
-msgstr ""
+msgstr "כתובת יפה באנגלית: /how-to-use-automatic-slug-converter"
 
 #: includes/class-ai-slug-user-guide.php:25
 msgid "By converting the slug to English, your links become easier to read, more attractive to share, and highly optimized for search engines. A small fix like this can have a big impact on user experience and website performance."
-msgstr ""
+msgstr "על ידי המרת הכתובת לאנגלית, הקישורים שלכם הופכים לקלים יותר לקריאה, מושכים יותר לשיתוף ומותאמים למנועי חיפוש. תיקון קטן כמו זה יכול להשפיע רבות על חוויית המשתמש ועל ביצועי האתר."
 
 #: includes/class-ai-slug-user-guide.php:27
 msgid "How to use this plugin?"
-msgstr ""
+msgstr "איך להשתמש בתוסף הזה?"
 
 #: includes/class-ai-slug-user-guide.php:29
 msgid "Try It Instantly:"
-msgstr ""
+msgstr "נסו את התוסף בקלי קלות:"
 
 #: includes/class-ai-slug-user-guide.php:29
 msgid "Once you activate the plugin, you can start using it right away — no need to purchase OpenAI API credits — you get up to 100 translations for free."
-msgstr ""
+msgstr "ברגע שמפעילים את התוסף, אפשר להתחיל להשתמש בו מיד, בלי לקנות קרדיטים של OpenAI - מקבלים עד 100 תרגומים בחינם."
 
 #: includes/class-ai-slug-user-guide.php:30
 msgid "WordPress Connectors (Recommended):"
-msgstr ""
+msgstr "WordPress Connectors (מומלץ):"
 
 #: includes/class-ai-slug-user-guide.php:30
 msgid "If you are running WordPress 7.0 or later, you can use WordPress Connectors to connect to multiple AI services (OpenAI, Anthropic, Google) from a single settings page. Configure your providers under Settings > Connectors, then select \"WordPress Connectors\" as your connection method above."
-msgstr ""
+msgstr "אם האתר מריץ WordPress 7.0 ומעלה, אפשר להשתמש ב-WordPress Connectors כדי להתחבר למספר שירותי AI (OpenAI, Anthropic, Google) מעמוד הגדרות אחד. יש להגדיר את הספקים תחת הגדרות > Connectors, ואז לבחור ב\"WordPress Connectors\" כשיטת החיבור שלך."
 
 #: includes/class-ai-slug-user-guide.php:31
 msgid "Enable Translation:"
-msgstr ""
+msgstr "הפעילו תרגום:"
 
 #: includes/class-ai-slug-user-guide.php:31
 msgid "Select the post types and taxonomies where the automatic translation feature should be applied."
-msgstr ""
+msgstr "בחרו את סוגי הפוסטים והטקסונומיות שבהם יש להפעיל את התרגום האוטומטי."
 
 #: includes/class-ai-slug-user-guide.php:32
 msgid "So simple!"
-msgstr ""
+msgstr "כל כך פשוט!"
 
 #: includes/class-ai-slug-user-guide.php:32
 msgid "When creating a new post or taxonomy term, the plugin will automatically generate a translated slug unless you provide a custom slug yourself."
-msgstr ""
+msgstr "כל כך פשוט! כאשר תיצרו פוסט חדש או מונח בטקסונומיה (קטגוריה, תגית...), התוסף ייצור אוטומטית כתובת מתורגמת אלא אם תבחרו להזין כתובת משלכם."
 
 #: includes/class-ai-slug-user-guide.php:33
 msgid "Verify Translations for Accuracy"
-msgstr ""
+msgstr "ודאו את דיוק התרגומים"
 
 #: includes/class-ai-slug-user-guide.php:33
 msgid "Words can have multiple meanings, so it's important to review the translation and ensure it fits the intended context."
-msgstr ""
+msgstr "למילים יכולות להיות כמה משמעויות, ולכן חשוב לבדוק את התרגום ולוודא שהוא מתאים להקשר המיועד."
 
 #: includes/class-ai-slug-user-guide.php:34
 msgid "If you've used up your 100 free translations, you can keep using the plugin by switching to one of these methods:"
-msgstr ""
+msgstr "אחרי ניצול 100 התרגומים החינמיים, עדיין אפשר להמשיך להשתמש בתוסף על ידי מעבר לאחת מהשיטות הבאות:"
 
 #: includes/class-ai-slug-user-guide.php:36
 #: includes/class-ai-slug-user-guide.php:72
 msgid "WordPress Connectors:"
-msgstr ""
+msgstr "WordPress Connectors:"
 
 #: includes/class-ai-slug-user-guide.php:36
 msgid "If you are on WordPress 7.0+, configure your AI providers under Settings > Connectors and select \"WordPress Connectors\" as your connection method."
-msgstr ""
+msgstr "אם האתר פועל על WordPress 7.0+, יש להגדיר את ספקי ה-AI שלך תחת הגדרות > Connectors ולבחור \"WordPress Connectors\" כשיטת החיבור שלך."
 
 #: includes/class-ai-slug-user-guide.php:37
 msgid "OpenAI API Key:"
-msgstr ""
+msgstr "מפתח API של OpenAI:"
 
 #: includes/class-ai-slug-user-guide.php:37
 msgid "Alternatively, use your own OpenAI API key:"
-msgstr ""
+msgstr "לחלופין, אפשר להשתמש במפתח API של OpenAI משלך:"
 
 #: includes/class-ai-slug-user-guide.php:39
 msgid "Create an OpenAI account:"
-msgstr ""
+msgstr "צרו חשבון OpenAI:"
 
 #: includes/class-ai-slug-user-guide.php:39
 msgid "OpenAI Signup"
-msgstr ""
+msgstr "הרשמה ל-OpenAI"
 
 #: includes/class-ai-slug-user-guide.php:40
 msgid "Add funds to your account:"
-msgstr ""
+msgstr "הוסיפו כספים לחשבון שלכם:"
 
 #: includes/class-ai-slug-user-guide.php:40
 msgid "Your Billing Page"
-msgstr ""
+msgstr "עמוד החיובים שלכם"
 
 #: includes/class-ai-slug-user-guide.php:41
 msgid "Generate an API Key:"
-msgstr ""
+msgstr "צרו מפתח API:"
 
 #: includes/class-ai-slug-user-guide.php:41
 msgid "API Keys"
-msgstr ""
+msgstr "מפתחות API"
 
 #: includes/class-ai-slug-user-guide.php:42
 msgid "Paste the API Key:"
-msgstr ""
+msgstr "הדביקו את מפתח ה-API:"
 
 #: includes/class-ai-slug-user-guide.php:42
 msgid "Return to this settings page and paste your API key in the \"OpenAI API Key\" card under the Settings tab."
-msgstr ""
+msgstr "חזור לעמוד הגדרות זה והדבק את מפתח ה-API שלך בכרטיס \"OpenAI API Key\" בלשונית ההגדרות."
 
 #: includes/class-ai-slug-user-guide.php:47
 msgid "How can I update existing slugs?"
-msgstr ""
+msgstr "איך ניתן לעדכן כתובות קיימות?"
 
 #: includes/class-ai-slug-user-guide.php:47
 msgid "You can update existing slugs in bulk using the Bulk Translate tool. The tool can also automatically create 301 redirects. When making changes, it's still recommended to review your redirects, as updating URLs may impact SEO if not handled correctly."
-msgstr ""
+msgstr "ניתן לעדכן כתובות קיימות בבת אחת באמצעות כלי ה-Bulk Translate. הכלי גם מאפשר ליצור הפניות 301 באופן אוטומטי. בעת ביצוע שינויים, מומלץ לוודא את תקינות ההפניות, כי עדכון כתובות עשוי להשפיע על ה-SEO אם אינו מנוהל כראוי."
 
 #: includes/class-ai-slug-user-guide.php:48
 msgid "If the slugs are not being translated:"
-msgstr ""
+msgstr "אם הכתובות לא מתורגמות:"
 
 #: includes/class-ai-slug-user-guide.php:50
 msgid "Check if you've used up your free translation quota."
-msgstr ""
+msgstr "יש לבדוק אם ניצלתם את מכסת התרגומים החינמית שלך."
 
 #: includes/class-ai-slug-user-guide.php:51
 msgid "Make sure you have enabled the relevant post types and taxonomies in the plugin's settings."
-msgstr ""
+msgstr "יש לוודא שהפעלתם את סוגי הפוסטים והטקסונומיות הרלוונטיים בהגדרות התוסף."
 
 #: includes/class-ai-slug-user-guide.php:52
 msgid "If using WordPress Connectors, verify that at least one AI provider is configured under Settings > Connectors."
-msgstr ""
+msgstr "אם בחרת ב-WordPress Connectors, יש לוודא שלפחות ספק AI אחד מוגדר תחת הגדרות > Connectors."
 
 #: includes/class-ai-slug-user-guide.php:53
 msgid "If using an OpenAI API key, verify that the key is valid and properly configured."
-msgstr ""
+msgstr "אם בחרת בשימוש במפתח API של OpenAI, יש לוודא שהמפתח תקין ומוגדר כראוי."
 
 #: includes/class-ai-slug-user-guide.php:54
 msgid "Ensure your AI provider account has an active payment method and sufficient funds available for use."
-msgstr ""
+msgstr "יש לוודא שלחשבון ספק ה-AI שלך יש אמצעי תשלום פעיל ויש יתרה מספקת."
 
 #: includes/class-ai-slug-user-guide.php:59
 #, php-format
 msgid "Check for potential downtime or service interruptions with OpenAI by visiting their %s, as temporary unavailability may cause translation issues."
-msgstr ""
+msgstr "אפשר לבדוק אם ישנן תקלות או הפרעות זמניות בשירות של OpenAI על ידי ביקור ב-%s, שכן אי-זמינות זמנית עשויה לגרום לבעיות בתרגום."
 
 #: includes/class-ai-slug-user-guide.php:60
 msgid "status page"
-msgstr ""
+msgstr "עמוד סטטוס"
 
 #: includes/class-ai-slug-user-guide.php:68
 msgid "Costs and Terms of Service"
-msgstr ""
+msgstr "עלויות ותנאי שימוש"
 
 #: includes/class-ai-slug-user-guide.php:70
 msgid "The plugin is completely free to use,"
-msgstr ""
+msgstr "התוסף חינמי לחלוטין לשימוש,"
 
 #: includes/class-ai-slug-user-guide.php:70
 msgid "and includes 100 slug translations at no cost."
-msgstr ""
+msgstr "וכולל 100 תרגומי כתובות ללא עלות."
 
 #: includes/class-ai-slug-user-guide.php:71
 msgid "After you've used the free quota"
-msgstr ""
+msgstr "לאחר שניצלת את המכסה החינמית"
 
 #: includes/class-ai-slug-user-guide.php:71
 msgid "you can continue using WordPress Connectors (recommended) or a direct OpenAI API key."
-msgstr ""
+msgstr "עליך לעבור להשתמש ב-WordPress Connectors (מומלץ) או במפתח API ישיר של OpenAI."
 
 #: includes/class-ai-slug-user-guide.php:72
 msgid "When using Connectors, pricing depends on the AI provider you configure (OpenAI, Anthropic, Google, etc.). Each provider has its own pricing model."
-msgstr ""
+msgstr "בעת שימוש ב-Connectors, התמחור תלוי בספק ה-AI שתגדיר (OpenAI, Anthropic, Google וכו'). לכל ספק יש מודל תמחור משלו."
 
 #: includes/class-ai-slug-user-guide.php:77
 msgid "It's cheap!"
-msgstr ""
+msgstr "זה זול!"
 
 #: includes/class-ai-slug-user-guide.php:84
 msgid "OpenAI Pricing Page"
-msgstr ""
+msgstr "עמוד המחירים של OpenAI"
 
 #: includes/class-ai-slug-user-guide.php:89
 msgid "Usage and Cost Disclaimer:"
-msgstr ""
+msgstr "הצהרת אחריות על שימוש ועלויות:"
 
 #: includes/class-ai-slug-user-guide.php:89
 msgid "The plugin has been tested and proven to be both cost-effective and highly efficient, with near-negligible costs. However, the plugin creator is not responsible for any cost overruns or high charges resulting from improper use of the plugin, website issues or plugin errors. Always monitor your usage on the OpenAI platform to ensure it aligns with your expectations."
-msgstr ""
+msgstr "התוסף נבדק והוכח כיעיל וחסכוני בעלויות נמוכות במיוחד. עם זאת, יוצר התוסף אינו אחראי לחריגות עלות או חיובים גבוהים הנובעים משימוש שגוי בתוסף, בעיות באתר או שגיאות בתוסף. תמיד מומלץ לעקוב אחר השימוש שלכם בפלטפורמת OpenAI כדי לוודא שהוא עומד בציפיות שלכם."
 
 #: includes/class-ai-slug-user-guide.php:98
 msgid "OpenAI's Terms of Service"
-msgstr ""
+msgstr "תנאי השימוש של OpenAI"
 
 #: includes/class-ai-slug-user-guide.php:99
 msgid "OpenAI's Privacy Policy"
-msgstr ""
+msgstr "מדיניות הפרטיות של OpenAI"
 
 #: includes/class-ai-slug-user-guide.php:81
 #, php-format
 msgid "Discover the pricing on the %1$s. For $1, you can perform between 10,000 and 20,000 translations depending on the title length."
-msgstr ""
+msgstr "גלו את התמחור ב%1$s. עבור $1, ניתן לבצע בין 10,000 ל-20,000 תרגומים בהתאם לאורך הכותרת."
 
 #: includes/class-ai-slug-user-guide.php:95
 #, php-format
 msgid "By using this plugin, you agree to %1$s and %2$s."
-msgstr ""
+msgstr "בשימוש בתוסף זה, אתם מסכימים ל%1$s ול%2$s."
 
 #: includes/class-ai-slug-log.php:106
 msgid "entries"
-msgstr ""
+msgstr "רשומות"
 
 #: includes/class-ai-slug-log.php:109
 msgid "Slug translation error log"
-msgstr ""
+msgstr "יומן שגיאות תרגום כתובות"
 
 #: includes/class-ai-slug-log.php:112
 msgid "Time"
-msgstr ""
+msgstr "זמן"
 
 #: includes/class-ai-slug-log.php:114
 msgid "Message"
-msgstr ""
+msgstr "הודעה"
 
 #: includes/class-ai-slug-log.php:119
 msgid "No errors logged yet."
-msgstr ""
+msgstr "לא נרשמו שגיאות עדיין."
 
 #: includes/class-ai-slug-log.php:143
 msgid "Clear Log"
-msgstr ""
+msgstr "נקה יומן"
 
 #: includes/class-ai-slug-log.php:148
 msgid "Clear Error Log?"
-msgstr ""
+msgstr "לנקות את יומן השגיאות?"
 
 #: includes/class-ai-slug-log.php:149
 msgid "This action cannot be undone."
-msgstr ""
+msgstr "פעולה זו אינה ניתנת לביטול."
 
 #: includes/class-ai-slug-log.php:152
 msgid "Yes, clear log"
-msgstr ""
+msgstr "כן, נקה יומן"
 
 #: includes/class-ai-slug-notices.php:63
 msgid "Thanks for installing Ailo – the AI-based slug translator!"
-msgstr ""
+msgstr "תודה שהתקנת את Ailo – מתרגם הכתובות מבוסס ה-AI!"
 
 #: includes/class-ai-slug-notices.php:69
 #, php-format
 msgid "To get started, please choose which content types you'd like to translate in the <a href=\"%s\">settings page</a>."
-msgstr ""
+msgstr "כדי להתחיל יש לבחור אילו סוגי תוכן לתרגם ב<a href=\"%s\">עמוד ההגדרות</a>."
 
 #: includes/class-ai-slug-notices.php:93
 msgid "Hey, it’s me – Ailo!"
-msgstr ""
+msgstr "היי, זה אני – Ailo!"
 
 #: includes/class-ai-slug-notices.php:100
 msgid "Yes! I want to rate you ★★★★★"
-msgstr ""
+msgstr "כן! אני רוצה לדרג אותך ★★★★★"
 
 #: includes/class-ai-slug-notices.php:129
 msgid "WordPress Connectors are not available. Slug translation is currently inactive. Please ensure you are running WordPress 7.0 or later with AI features enabled, or switch to a different connection method."
-msgstr ""
+msgstr "WordPress Connectors אינם זמינים. תרגום כתובות לא פעיל כרגע. צריך לבדוק שהאתר פועל על WordPress 7.0 ומעלה עם תכונות AI מופעלות, או לעבור לשיטת חיבור אחרת."
 
 #: includes/class-ai-slug-notices.php:153
 #, php-format
 msgid "Slug translation is currently inactive — no AI providers are configured. Please set up at least one provider in <a href=\"%1$s\">Settings <span class=\"haayal-arrow\">&rarr;</span> Connectors</a>, or <a href=\"%2$s\">choose a different connection method</a>."
-msgstr ""
+msgstr "תרגום כתובות כרגע לא פעיל - לא הוגדרו ספקי AI. חשוב להגדיר לפחות ספק אחד ב<a href=\"%1$s\">הגדרות <span class=\"haayal-arrow\">&rarr;</span> Connectors</a>, או <a href=\"%2$s\">לבחור שיטת חיבור אחרת</a>."
 
 #: includes/class-ai-slug-notices.php:163
 #, php-format
 msgid "Slug translation is currently inactive — no OpenAI API key has been entered. Please add your API key in the <a href=\"%s\">plugin settings</a>."
-msgstr ""
+msgstr "תרגום כתובות לא פעיל כרגע - לא הוזן מפתח API של OpenAI. יש להוסיף את מפתח ה-API שלך ב<a href=\"%s\">הגדרות התוסף</a>."
 
 #: includes/class-ai-slug-notices.php:171
 #, php-format
 msgid "Slug translation is currently inactive — your OpenAI API key is invalid or unauthorized. Please check your key in the <a href=\"%s\">plugin settings</a>."
-msgstr ""
+msgstr "תרגום כתובת לא פעיל כרגע - מפתח ה-API של OpenAI שלך אינו תקין או אינו מורשה. חשוב לבדוק את המפתח שלך ב<a href=\"%s\">הגדרות התוסף</a>."
 
 #: includes/class-ai-slug-notices.php:177
 #, php-format
 msgid "Slug translation is currently inactive — your OpenAI API key has no remaining credit. Please add credit or switch connection method in the <a href=\"%s\">plugin settings</a>."
-msgstr ""
+msgstr "תרגום כתובות לא פעיל כרגע - אין יתרה במפתח ה-API של OpenAI שלך. יש להוסיף יתרה או לעבור לשיטת חיבור אחרת ב<a href=\"%s\">הגדרות התוסף</a>."
 
 #: includes/class-ai-slug-notices.php:222
 msgid "Ailo 1.0 is here!"
-msgstr ""
+msgstr "Ailo 1.0 כאן!"
 
 #: includes/class-ai-slug-notices.php:224
 msgid "Thanks for updating! Here's what's new:"
-msgstr ""
+msgstr "תודה שעדכנת! הנה כל מה שחדש:"
 
 #: includes/class-ai-slug-notices.php:232
 #, php-format
 msgid "<strong>Bulk Translation</strong> — Translate all your existing non-English slugs at once from the <a href=\"%s\">Bulk Translation</a> tab. 301 redirects are created automatically."
-msgstr ""
+msgstr "<strong>תרגום בבת אחת</strong> - תרגמו את כל הכתובות הקיימות שאינן באנגלית בבת אחת מלשונית <a href=\"%s\">תרגום בבת אחת</a>. הפניות 301 נוצרות אוטומטית."
 
 #: includes/class-ai-slug-notices.php:284
 #, php-format
 msgid "<strong>WordPress Connectors</strong> — Connect to multiple AI providers (OpenAI, Anthropic, Google) through WordPress's built-in AI integration. Set it up in <a href=\"%s\">Settings</a>."
-msgstr ""
+msgstr "<strong>WordPress Connectors</strong> - להתחבר למספר ספקי AI (OpenAI, Anthropic, Google) דרך אינטגרציית ה-AI המובנית של WordPress. ניתן להגדיר את זה ב<a href=\"%s\">הגדרות</a>."
 
 #: includes/class-ai-slug-notices.php:295
 #, php-format
-msgid "<strong>Regenerate Slug</strong> — Generate a new AI suggestion if you\'d like to try a different result before saving."
-msgstr ""
+msgid "<strong>Regenerate Slug</strong> — Generate a new AI suggestion if you'd like to try a different result before saving."
+msgstr "<strong>צור כתובת מחדש</strong> -אפשר ליצור עם AI הצעת תרגום חדשה ולנסות תוצאה אחרת לפני השמירה."
 
-#: includes/class-ai-slug-posts.php:63
-#: includes/class-ai-slug-terms.php:49
+#: includes/class-ai-slug-posts.php:63 includes/class-ai-slug-terms.php:49
 msgid "Title is empty or missing."
-msgstr ""
+msgstr "הכותרת ריקה או חסרה."
 
-#: includes/class-ai-slug-posts.php:64
-#: includes/class-ai-slug-terms.php:50
+#: includes/class-ai-slug-posts.php:64 includes/class-ai-slug-terms.php:50
 msgid "Unknown Title"
-msgstr ""
+msgstr "כותרת לא ידועה"
 
-#: includes/class-ai-slug-posts.php:162
-#: includes/class-ai-slug-posts.php:308
+#: includes/class-ai-slug-posts.php:162 includes/class-ai-slug-posts.php:308
 msgid "Slug generated by AI"
-msgstr ""
+msgstr "כתובת שנוצרה על ידי AI"
 
 #: includes/class-ai-slug-posts.php:166
 msgid "Slug manually edited"
-msgstr ""
+msgstr "כתובת נערכה ידנית"
 
-#: includes/class-ai-slug-posts.php:176
-#: includes/class-ai-slug-posts.php:309
+#: includes/class-ai-slug-posts.php:176 includes/class-ai-slug-posts.php:309
 msgid "Regenerate slug"
-msgstr ""
+msgstr "צור כתובת מחדש"
 
-#: includes/class-ai-slug-posts.php:177
-#: includes/class-ai-slug-posts.php:310
+#: includes/class-ai-slug-posts.php:177 includes/class-ai-slug-posts.php:310
 msgid "Translating…"
-msgstr ""
+msgstr "מתרגם…"
 
-#: includes/class-ai-slug-posts.php:190
-#: includes/class-ai-slug-posts.php:316
+#: includes/class-ai-slug-posts.php:190 includes/class-ai-slug-posts.php:316
 msgid "Bulk translate slugs"
-msgstr ""
+msgstr "תרגם כתובות בבת אחת"
 
 #: includes/class-ai-slug-posts.php:346
 msgid "Title is empty."
-msgstr ""
+msgstr "הכותרת ריקה."
 
 #: includes/class-ai-slug-posts.php:359
 msgid "Translation failed or title is already in English."
-msgstr ""
+msgstr "התרגום נכשל או שהכותרת כבר באנגלית."
 
 #: includes/class-ai-slug-redirects.php:72
 msgid "No redirect rules found."
-msgstr ""
+msgstr "לא נמצאו כללי הפניה."
 
 #: includes/class-ai-slug-redirects.php:73
 msgid "Loading redirects..."
-msgstr ""
+msgstr "טוען הפניות..."
 
 #: includes/class-ai-slug-redirects.php:74
 msgid "Error loading redirects."
-msgstr ""
+msgstr "שגיאה בטעינת הפניות."
 
 #: includes/class-ai-slug-redirects.php:75
 msgid "Remove redirect"
-msgstr ""
+msgstr "הסר הפניה"
 
 #: includes/class-ai-slug-redirects.php:76
 msgid "Remove Redirect?"
-msgstr ""
+msgstr "להסיר הפניה?"
 
 #: includes/class-ai-slug-redirects.php:77
 msgid "This may affect SEO and cause broken links."
-msgstr ""
+msgstr "פעולה זו עלולה להשפיע על SEO ולגרום לקישורים שבורים."
 
 #: includes/class-ai-slug-redirects.php:78
 msgid "Remove All Redirects?"
-msgstr ""
+msgstr "להסיר את כל ההפניות?"
 
 #: includes/class-ai-slug-redirects.php:79
 msgid "This cannot be undone and may negatively impact SEO and cause broken links."
-msgstr ""
+msgstr "פעולה זו אינה ניתנת לביטול ועלולה להשפיע לרעה על SEO ולגרום לקישורים שבורים."
 
 #: includes/class-ai-slug-redirects.php:80
 msgid "Yes, remove"
-msgstr ""
+msgstr "כן, הסר"
 
 #: includes/class-ai-slug-redirects.php:82
 msgid "Redirect removed."
-msgstr ""
+msgstr "ההפניה הוסרה."
 
 #: includes/class-ai-slug-redirects.php:83
 msgid "All redirects removed."
-msgstr ""
+msgstr "כל ההפניות הוסרו."
 
 #: includes/class-ai-slug-redirects.php:84
 msgid "active redirects"
-msgstr ""
+msgstr "הפניות פעילות"
 
 #: includes/class-ai-slug-redirects.php:85
 msgid "Post"
-msgstr ""
+msgstr "פוסט"
 
 #: includes/class-ai-slug-redirects.php:86
 msgid "Term"
-msgstr ""
+msgstr "מונח"
 
 #: includes/class-ai-slug-redirects.php:87
 msgid "The current URL of this item no longer matches the redirect destination."
-msgstr ""
+msgstr "כתובת ה-URL הנוכחית של פריט זה אינה תואמת עוד את יעד ההפניה."
 
 #: includes/class-ai-slug-redirects.php:88
 msgid "The slug may have been changed again since this redirect was created."
-msgstr ""
+msgstr "ייתכן שהכתובת השתנתה מאז שהפניה זו נוצרה."
 
 #: includes/class-ai-slug-redirects.php:99
 msgid "These 301 redirects were created during bulk slug translation. If you prefer to manage redirects using another plugin or .htaccess, you can safely delete them here."
-msgstr ""
+msgstr "הפניות 301 אלה נוצרו במהלך תרגום כתובות בבת אחת. זה בטוח למחוק אותן כאן רק אם בחרת לנהל הפניות באמצעות תוסף אחר או .htaccess."
 
 #: includes/class-ai-slug-redirects.php:104
 msgid "Filter:"
-msgstr ""
+msgstr "סנן:"
 
 #: includes/class-ai-slug-redirects.php:106
 msgid "All"
-msgstr ""
+msgstr "הכל"
 
 #: includes/class-ai-slug-redirects.php:107
 msgid "Posts / Post Types"
-msgstr ""
+msgstr "פוסטים / סוגי פוסטים"
 
 #: includes/class-ai-slug-redirects.php:108
 msgid "Terms"
-msgstr ""
+msgstr "מונחים"
 
 #: includes/class-ai-slug-redirects.php:117
 msgid "Slug translation redirects"
-msgstr ""
+msgstr "הפניות תרגום כתובת"
 
 #: includes/class-ai-slug-redirects.php:121
 msgid "Old URL"
-msgstr ""
+msgstr "כתובת URL ישנה"
 
 #: includes/class-ai-slug-redirects.php:122
 msgid "New URL"
-msgstr ""
+msgstr "כתובת URL חדשה"
 
 #: includes/class-ai-slug-redirects.php:123
 msgid "Type"
-msgstr ""
+msgstr "סוג"
 
 #: includes/class-ai-slug-redirects.php:124
 msgid "Redirected On"
-msgstr ""
+msgstr "הופנה בתאריך"
 
 #: includes/class-ai-slug-redirects.php:134
 msgid "Export CSV"
-msgstr ""
+msgstr "ייצוא CSV"
 
 #: includes/class-ai-slug-redirects.php:137
 msgid "Export .htaccess rules"
-msgstr ""
+msgstr "ייצוא כללי .htaccess"
 
 #: includes/class-ai-slug-redirects.php:142
 msgid "Remove All Redirects"
-msgstr ""
+msgstr "הסרת כל ההפניות"
 
 #: includes/class-ai-slug-redirects.php:453
 msgid "Invalid redirect ID."
-msgstr ""
+msgstr "מזהה הפניה לא חוקי."
 
 #: includes/class-ai-slug-redirects.php:466
 msgid "Failed to delete redirect."
-msgstr ""
+msgstr "מחיקת ההפניה נכשלה."
 
 #: includes/class-ai-slug-settings.php:62
 msgid "Your settings have been saved."
-msgstr ""
+msgstr "ההגדרות שלך נשמרו."
 
 #: includes/class-ai-slug-settings.php:72
 msgid "WordPress Connectors are not available. Please ensure you are running WordPress 7.0 or later with AI features enabled."
-msgstr ""
+msgstr "WordPress Connectors אינם זמינים. יש לוודא שהאתר פועל עם WordPress 7.0 ומעלה ועם תכונות AI מופעלות."
 
 #: includes/class-ai-slug-settings.php:100
 #, php-format
 msgid "No AI providers are configured yet. Slug translation will not work until you set up at least one provider in %s."
-msgstr ""
+msgstr "טרם הוגדרו ספקי AI. תרגום כתובות לא יעבוד עד שיוגדר לפחות ספק אחד ב-%s."
 
 #: includes/class-ai-slug-settings.php:101
 msgid "Connectors"
-msgstr ""
+msgstr "Connectors"
 
 #: includes/class-ai-slug-settings.php:109
 msgid "WordPress Connectors mode is active. Translations will use your configured AI providers."
-msgstr ""
+msgstr "מצב WordPress Connectors פעיל. התרגומים ישתמשו בספקי ה-AI שהגדרת."
 
 #: includes/class-ai-slug-settings.php:125
 msgid "You've used all your free translations. To keep using AI slug translation, please choose another connection method."
-msgstr ""
+msgstr "ניצלת את כל התרגומים החינמיים שלך. יש לבחור שיטת חיבור אחרת כדי להמשיך להשתמש בתרגום כתובות AI."
 
 #: includes/class-ai-slug-settings.php:140
 msgid "OpenAI API key is valid and working."
-msgstr ""
+msgstr "מפתח API של OpenAI תקין ועובד."
 
 #: includes/class-ai-slug-settings.php:147
 msgid "OpenAI API key is valid, but you have no remaining credit."
-msgstr ""
+msgstr "מפתח API של OpenAI תקין, אך אין לך יתרה."
 
 #: includes/class-ai-slug-settings.php:154
 msgid "The provided OpenAI API key is invalid or unauthorized. Please double-check your key."
-msgstr ""
+msgstr "מפתח ה-API של OpenAI שסופק אינו תקין או אינו מורשה. יש לבדוק שוב את המפתח שלך."
 
 #: includes/class-ai-slug-settings.php:205
 msgid "Enabled Post Types"
-msgstr ""
+msgstr "סוגי פוסטים מופעלים"
 
 #: includes/class-ai-slug-settings.php:219
 msgid "Enabled Taxonomies"
-msgstr ""
+msgstr "טקסונומיות מופעלות"
 
 #: includes/class-ai-slug-settings.php:234
 msgid "Connection Method"
-msgstr ""
+msgstr "שיטת חיבור"
 
 #: includes/class-ai-slug-settings.php:235
 msgid "Choose how the plugin connects to AI services for slug translation."
-msgstr ""
+msgstr "כיצד התוסף מתחבר לשירותי AI לתרגום כתובות?"
 
 #: includes/class-ai-slug-settings.php:293
 msgid "Free Translations"
-msgstr ""
+msgstr "תרגומים חינמיים"
 
 #: includes/class-ai-slug-settings.php:296
 msgid "No account needed — get started instantly with 100 free slug translations for your site."
-msgstr ""
+msgstr "לא נדרש חשבון - 100 תרגומי כתובות חינמיים זמינים לאתר שלך."
 
 #: includes/class-ai-slug-settings.php:302
 msgid "Quota used up — translation will not work until you switch to a different connection method."
-msgstr ""
+msgstr "המכסה נוצלה - התרגום לא יעבוד עד שתוגדר שיטת חיבור אחרת."
 
 #: includes/class-ai-slug-settings.php:306
 #, php-format
 msgid "%d out of 100 remaining"
-msgstr ""
+msgstr "%d מתוך 100 נותרו"
 
 #: includes/class-ai-slug-settings.php:316
 msgid "Recommended"
-msgstr ""
+msgstr "מומלץ"
 
 #: includes/class-ai-slug-settings.php:321
 msgid "WordPress Connectors"
-msgstr ""
+msgstr "WordPress Connectors"
 
 #: includes/class-ai-slug-settings.php:324
 msgid "Use WordPress's built-in AI integration. Connect multiple AI services (OpenAI, Anthropic, Google) from one place."
-msgstr ""
+msgstr "להשתמש באינטגרציית ה-AI המובנית של WordPress. לחבר מספר שירותי AI (OpenAI, Anthropic, Google) ממקום אחד."
 
 #: includes/class-ai-slug-settings.php:332
 #, php-format
 msgid "Connected: %s"
-msgstr ""
+msgstr "מחובר: %s"
 
 #: includes/class-ai-slug-settings.php:337
 msgid "Configure Connectors"
-msgstr ""
+msgstr "הגדרת Connectors"
 
 #: includes/class-ai-slug-settings.php:340
 msgid "No providers configured yet — translation will not work until at least one provider is set up."
-msgstr ""
+msgstr "טרם הוגדרו ספקים - התרגום לא יעבוד עד שלפחות ספק אחד יוגדר."
 
 #: includes/class-ai-slug-settings.php:342
 msgid "Save & Go to Connectors"
-msgstr ""
+msgstr "שמירה ומעבר ל-Connectors"
 
 #: includes/class-ai-slug-settings.php:353
 msgid "OpenAI API Key"
-msgstr ""
+msgstr "מפתח API של OpenAI"
 
 #: includes/class-ai-slug-settings.php:356
 msgid "Connect directly using your own OpenAI API key."
-msgstr ""
+msgstr "להתחבר ישירות באמצעות מפתח API של OpenAI."
 
 #: includes/class-ai-slug-settings.php:360
 msgid "API Key:"
-msgstr ""
+msgstr "מפתח API:"
 
 #: includes/class-ai-slug-settings.php:364
 msgid "Where do I get an API key?"
-msgstr ""
+msgstr "איפה משיגים מפתח API?"
 
 #: includes/class-ai-slug-settings.php:370
 msgid "No API key entered — translation will not work until a valid key is provided."
-msgstr ""
+msgstr "לא הוזן מפתח API - התרגום לא יעבוד עד שיסופק מפתח תקין."
 
 #: includes/class-ai-slug-settings.php:374
 msgid "API key is invalid or unauthorized — please double-check your key."
-msgstr ""
+msgstr "מפתח ה-API אינו תקין או אינו מורשה - בדוק שוב את המפתח שלך."
 
 #: includes/class-ai-slug-settings.php:378
 msgid "API key is valid but has no remaining credit — translation will not work until you add credit."
-msgstr ""
+msgstr "מפתח ה-API תקין אך אין יתרה בחשבונך - התרגום לא יעבוד עד שתוסיף יתרה."
 
 #: includes/class-ai-slug-settings.php:388
 msgid "Max Tokens"
-msgstr ""
+msgstr "מקסימום טוקנים"
 
 #: includes/class-ai-slug-settings.php:390
 msgid "Select the maximum number of tokens the AI will use to generate a single response:"
-msgstr ""
+msgstr "בחירת מספר הטוקנים המקסימלי לניצול בכל קריאה לAI:"
 
 #: includes/class-ai-slug-settings.php:394
 msgid "20 (default)"
-msgstr ""
+msgstr "20 (ברירת מחדל)"
 
 #: includes/class-ai-slug-settings.php:406
 msgid "A smaller value can help cap costs, ensuring they don't exceed your intended budget. For extremely long titles or in case of process failures, selecting a higher value may resolve the issue. If there's no specific need, it is recommended to leave this setting at the default value."
-msgstr ""
+msgstr "ערך נמוך יותר יכול לעזור להגביל את העלויות, ולוודא שהן לא יחרגו מהתקציב המיועד. עבור כותרות ארוכות במיוחד או אם יצירת הכתובות לא עובדת כמצופה, בחירת ערך גבוה יותר עשויה לפתור את הבעיה. אם אין צורך מיוחד, מומלץ להשאיר הגדרה זו בערך ברירת המחדל."
 
 #: includes/class-ai-slug-settings.php:411
 msgid "301 Redirects"
-msgstr ""
+msgstr "הפניות 301"
 
 #: includes/class-ai-slug-settings.php:415
 msgid "By default, create 301 redirects for URLs changed during bulk translation."
-msgstr ""
+msgstr "כברירת מחדל, צור הפניות 301 עבור כתובות URL שהשתנו במהלך תרגום בבת אחת."
 
 #: includes/class-ai-slug-settings.php:417
 msgid "When enabled, the plugin will automatically create 301 redirects from old URLs to new ones during bulk slug translation. This helps preserve SEO and prevents broken links."
-msgstr ""
+msgstr "כשמופעל, התוסף ייצור אוטומטית הפניות 301 מכתובות URL ישנות לחדשות במהלך תרגום כתובות בבת אחת. זה עוזר לשמר את ה-SEO ומונע קישורים שבורים."
 
 #: includes/class-ai-slug-settings.php:424
 #, php-format
 msgid "%1$sRedirection%2$s is active and may already %3$shandle redirects automatically when permalinks change%4$s, but it does not handle slug changes for taxonomy terms (such as categories or tags)."
-msgstr ""
+msgstr "%1$sRedirection%2$s פעיל ועשוי כבר %3$sלטפל בהפניות אוטומטית כשקישורים קבועים משתנים%4$s, אך הוא אינו מטפל בשינויי כתובות עבור מונחי טקסונומיה (כגון קטגוריות או תגיות)."
 
 #: includes/class-ai-slug-settings.php:432
 msgid "AILO can track URL changes and create redirects for both posts/custom post types and taxonomy terms when using the Bulk Translate process, depending on your settings."
-msgstr ""
+msgstr "AILO יכול לעקוב אחר שינויי URL וליצור הפניות הן לפוסטים/סוגי פוסטים מותאמים אישית והן למונחי טקסונומיה בעת שימוש בתהליך תרגום בבת אחת, בהתאם להגדרות שלך."
 
 #: includes/class-ai-slug-settings.php:433
 msgid "To avoid conflicts or duplicate redirects, make sure only one plugin handles redirects for the same content and review your setup to avoid overlaps."
-msgstr ""
+msgstr "כדי להימנע מהתנגשויות או הפניות כפולות, ודא שרק תוסף אחד מטפל בהפניות עבור אותו תוכן ובדוק את ההגדרות שלך כדי להימנע מכפילות."
 
 #: includes/class-ai-slug-settings.php:439
 msgid "Save Settings"
-msgstr ""
+msgstr "שמירה"
 
 #: includes/class-ai-slug-admin-page.php:167
 msgid "Help & Guide"
-msgstr ""
+msgstr "עזרה והדרכה"
 
-#: includes/class-ai-slug-bulk.php:129
-#: includes/class-ai-slug-posts.php:186
+#: includes/class-ai-slug-bulk.php:129 includes/class-ai-slug-posts.php:186
 #: includes/class-ai-slug-posts.php:375
 msgid "I tried, but this is already the best option"
-msgstr ""
+msgstr "ניסיתי, אבל זו כבר האפשרות הטובה ביותר"
 
 #: includes/class-ai-slug-notices.php:66
 msgid "Keep your URLs clean, readable, and shareable instead of turning into ugly, unreadable encoded URLs."
-msgstr ""
+msgstr "שמרו על כתובות ה-URL שלכם נקיות, קריאות וניתנות לשיתוף, במקום שיהפכו לכתובות מקודדות מכוערות ובלתי קריאות."
 
 #: includes/class-ai-slug-notices.php:68
 msgid "Ailo can automatically translate slugs into English for all content types and taxonomy terms when they're published, and also lets you update existing slugs in bulk using the Bulk Translation tool."
-msgstr ""
+msgstr "Ailo יכול לתרגם אוטומטית כתובות URL לאנגלית עבור כל סוגי התוכן ומונחי הטקסונומיה בעת פרסומם, וגם מאפשר לעדכן כתובות קיימות בכמות גדולה באמצעות כלי התרגום הגורף."
 
 #: includes/class-ai-slug-notices.php:100
 msgid "Are you enjoying the slugs I'm generating for you? If so, I'd be incredibly grateful if you could give me a 5-star review. It only takes a moment and means the world!"
-msgstr ""
+msgstr "אתם נהנים מכתובות ה-URL שאני מייצר עבורכם? אם כן, אשמח מאוד אם תוכלו לתת לי חוות דעת 5 כוכבים. לוקח רגע ומשמעותי מאוד!"
 
 #: includes/class-ai-slug-settings.php:445
 #: includes/class-ai-slug-settings.php:446
 msgid "KeepInMind Dashboard Notes"
-msgstr ""
+msgstr "KeepInMind - פתקי לוח הבקרה"
 
 #: includes/class-ai-slug-settings.php:447
 msgid "Add contextual notes directly inside your WordPress admin - so your team sees exactly what matters, exactly where it matters."
-msgstr ""
+msgstr "הוסיפו פתקים נעוצים ישירות בממשק הניהול של וורדפרס, כדי שהצוות שלכם יראה בדיוק את מה שחשוב, בדיוק איפה שזה חשוב."
 
 #: includes/class-ai-slug-settings.php:448
 msgid "Start with Notes"
-msgstr ""
+msgstr "להתקנה ויצירת פתקים"
 
 #: includes/class-ai-slug-bulk.php:172
 msgid "Bulk Translation Requires Your Own AI Connection"
-msgstr ""
+msgstr "תרגום בבת אחת דורש חיבור AI משלך"
 
 #: includes/class-ai-slug-bulk.php:173
 msgid "You get 100 free translations on us - plenty to try things out and translate some content."
-msgstr ""
+msgstr "קיבלת 100 תרגומים חינמיים מאיתנו - מספיק כדי לנסות ולתרגם תוכן."
 
 #: includes/class-ai-slug-bulk.php:174
 msgid "If you'd like to translate your entire site at once, you'll need to connect your own AI provider. This isn't a paid plugin feature - it simply uses your own AI account instead of ours."
-msgstr ""
+msgstr "כדי לתרגם את כל האתר בבת אחת צריך לחבר ספק AI משלך. זה לא תכונה בתשלום בתוסף - פשוט משתמשים בחשבון ה-AI שלך במקום בשלנו."
 
 #: includes/class-ai-slug-bulk.php:175
 msgid "Supported options:"
-msgstr ""
+msgstr "אפשרויות נתמכות:"
 
 #: includes/class-ai-slug-bulk.php:177
 msgid "OpenAI API key"
-msgstr ""
+msgstr "מפתח API של OpenAI"
 
 #: includes/class-ai-slug-bulk.php:178
 msgid "WordPress AI Connectors (OpenAI, Anthropic, Google, and more)"
-msgstr ""
+msgstr "WordPress AI Connectors (OpenAI, Anthropic, Google ועוד)"
 
 #: includes/class-ai-slug-bulk.php:180
 msgid "Once connected, you can bulk translate as much content as you'd like."
-msgstr ""
+msgstr "לאחר החיבור, אפשר לתרגם בבת אחת כמה תוכן שרוצים."
 
 #: includes/class-ai-slug-bulk.php:183
 msgid "Go to Settings"
-msgstr ""
+msgstr "לעבור להגדרות"
 
 #: includes/class-ai-slug-bulk.php:186
 msgid "How to get an API key"
-msgstr ""
-
-
+msgstr "איך מקבלים מפתח API"

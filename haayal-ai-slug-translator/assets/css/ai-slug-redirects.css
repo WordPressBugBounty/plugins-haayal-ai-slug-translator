@@ -1,0 +1,189 @@
+/* Redirects Tab */
+#haayal-redirects-wrapper {
+	max-width: 100%;
+	margin-top: 15px;
+}
+
+/* Description */
+.haayal-redirects-description {
+	color: #555;
+	font-size: 13px;
+	margin-bottom: 15px;
+}
+
+/* Top bar: filter + count inline */
+.haayal-redirects-top-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: wrap;
+	margin-bottom: 15px;
+}
+.haayal-redirects-filter {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.haayal-redirects-filter label {
+	font-weight: bold;
+	font-size: 13px;
+}
+.haayal-redirects-filter select {
+	padding: 0.3em 2.6em 0.3em 1em;
+}
+[dir="rtl"] .haayal-redirects-filter select {
+	padding: 0.3em 1em 0.3em 2.6em;
+}
+.haayal-redirects-count {
+	font-size: 13px;
+	color: #555;
+}
+
+/* Message area */
+.haayal-redirects-message {
+	padding: 10px 15px;
+	border-radius: 4px;
+	margin-bottom: 15px;
+	font-size: 13px;
+}
+.haayal-redirects-message.info {
+	background-color: #e8f4fd;
+	border: 1px solid #bee5eb;
+	color: #0c5460;
+}
+.haayal-redirects-message.error {
+	background-color: #f8d7da;
+	border: 1px solid #f5c6cb;
+	color: #721c24;
+}
+
+/* Table columns */
+#haayal-redirects-table .column-title {
+	width: 16%;
+}
+#haayal-redirects-table .column-old-url {
+	width: 24%;
+	word-break: break-all;
+}
+#haayal-redirects-table .column-new-url {
+	width: 24%;
+	word-break: break-all;
+}
+#haayal-redirects-table .column-type {
+	width: 10%;
+}
+#haayal-redirects-table .column-created {
+	width: 14%;
+}
+#haayal-redirects-table .column-actions {
+	width: 12%;
+}
+#haayal-redirects-table code {
+	font-size: 12px;
+	background: #f0f0f1;
+	padding: 2px 6px;
+	border-radius: 3px;
+	font-family: Consolas, Monaco, monospace, arial;
+}
+
+/* URL mismatch warning + tooltip */
+.haayal-tooltip-wrap {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+.haayal-url-mismatch {
+	color: #dba617;
+	font-size: 16px;
+	cursor: help;
+}
+.haayal-tooltip {
+	display: none;
+	position: absolute;
+	bottom: calc(100% + 8px);
+	left: 50%;
+	transform: translateX(-50%);
+	width: 260px;
+	padding: 10px 12px;
+	background: #333;
+	color: #fff;
+	font-size: 12px;
+	line-height: 1.5;
+	border-radius: 6px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+	z-index: 100;
+	pointer-events: none;
+}
+.haayal-tooltip span {
+	display: block;
+}
+.haayal-tooltip span + span {
+	margin-top: 6px;
+}
+.haayal-tooltip::after {
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 6px solid transparent;
+	border-top-color: #333;
+}
+.haayal-tooltip-wrap:hover .haayal-tooltip {
+	display: block;
+}
+[dir="rtl"] .haayal-tooltip {
+	left: auto;
+	right: 50%;
+	transform: translateX(50%);
+}
+[dir="rtl"] .haayal-tooltip::after {
+	left: auto;
+	right: 50%;
+	transform: translateX(50%);
+}
+
+/* Delete button */
+.haayal-redirects-delete-btn {
+	color: #b32d2e;
+	cursor: pointer;
+}
+.haayal-redirects-delete-btn:hover {
+	color: #a00;
+}
+
+/* Footer: actions + pagination inline */
+.haayal-redirects-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 15px;
+	gap: 20px;
+}
+.haayal-redirects-export-actions {
+	display: flex;
+	gap: 8px;
+}
+
+/* Delete All button */
+.haayal-redirects-delete-all-btn {
+	color: #b32d2e;
+	border-color: #b32d2e;
+}
+.haayal-redirects-delete-all-btn:hover {
+	background: #b32d2e;
+	border-color: #b32d2e;
+	color: #fff;
+}
+
+/* Pagination */
+#haayal-redirects-pagination {
+	display: flex;
+	gap: 4px;
+	flex-wrap: wrap;
+}
+.haayal-redirects-page-btn {
+	min-width: 36px;
+	text-align: center;
+}

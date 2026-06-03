@@ -1,0 +1,67 @@
+.haayal-notice {
+    display: flex; 
+    align-items: center; 
+    gap: 34px;
+    padding: 12px 40px;
+}
+
+.haayal-notice-logo {
+    width: 65px; 
+    height: auto; 
+}
+
+.haayal-notice p {
+    margin: 0;
+}
+
+.haayal-review-notice a.button {
+	display: inline-block;
+}
+
+/* Upgrade notice — festive design */
+.haayal-upgrade-notice {
+	border-color: #5b21b6;
+	background: #ffffff;
+	align-items: flex-start;
+}
+
+.haayal-upgrade-notice .haayal-notice-logo {
+	filter: drop-shadow(0 2px 8px rgba(124, 58, 237, 0.25));
+}
+
+.haayal-upgrade-content {
+	flex: 1;
+}
+
+.haayal-upgrade-header {
+	font-size: 1.25em;
+	font-weight: 700;
+	color: #5b21b6;
+	margin-bottom: 6px;
+}
+
+.haayal-upgrade-features {
+	margin: 8px 0 4px;
+	padding: 0;
+	list-style: none;
+}
+
+.haayal-upgrade-features li {
+	margin-bottom: 8px;
+	line-height: 1.5;
+}
+
+.haayal-upgrade-icon {
+	font-size: 1.1em;
+	flex-shrink: 0;
+}
+
+.haayal-upgrade-features a {
+	color: #5b21b6;
+	text-decoration: underline;
+	text-decoration-style: dotted;
+}
+
+.haayal-upgrade-features a:hover {
+	color: #7c3aed;
+}

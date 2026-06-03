@@ -1,0 +1,147 @@
+/* ============================================================
+   Ailo AI Slug Translator — shared UI styles
+   Loaded on: classic editor, block editor, bulk/settings page
+   ============================================================ */
+
+/* --- Spin animation --- */
+@keyframes haayal-spin {
+	from { transform: rotate(0deg); }
+	to   { transform: rotate(360deg); }
+}
+
+.haayal-icon-spin {
+	animation: haayal-spin 0.8s linear infinite;
+	transform-origin: center;
+}
+
+/* --- SVG icon base --- */
+.haayal-badge-icon,
+.haayal-regen-icon {
+	fill: currentColor;
+	flex-shrink: 0;
+}
+
+/* --- Base pill layout (shared by all badge/button pill elements) --- */
+.haayal-pill {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	padding: 3px 10px;
+	border-radius: 12px;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1.4;
+	border: 1px solid transparent;
+}
+
+/* --- Status badge color variants --- */
+.haayal-pill--ai {
+	color: #0a6b2e;
+	background: #e6f4ea;
+	border-color: #b7dfbf;
+}
+
+.haayal-pill--edited {
+	color: #1e4f8a;
+	background: #e8f0fe;
+	border-color: #b3cef6;
+}
+
+.haayal-pill--bulk {
+	color: #005a87;
+	background: #e8f4fd;
+	border-color: #b3d7f0;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.haayal-pill--bulk:hover {
+	background: #d0e9f7;
+	border-color: #89c3e8;
+}
+
+/* --- Regenerate button (add alongside .haayal-pill) --- */
+.haayal-pill-regen {
+	gap: 5px;
+	color: #6d28d9;
+	background: #f3eeff;
+	border-color: #c4b5fd;
+	cursor: pointer;
+	transition: all 0.15s ease;
+}
+
+.haayal-pill-regen:hover {
+	background: #e9deff;
+	border-color: #a78bfa;
+}
+
+.haayal-pill-regen:active {
+	background: #ddd6fe;
+	transform: scale(0.97);
+}
+
+.haayal-pill-regen:disabled {
+	opacity: 0.6;
+	cursor: wait;
+}
+
+/* --- Tooltip --- */
+.haayal-slug-tooltip {
+	position: fixed;
+	z-index: 9999999;
+	background: #132d3c;
+	color: #fff;
+	font-size: 12px;
+	line-height: 1.4;
+	padding: 5px 10px;
+	border-radius: 6px;
+	white-space: nowrap;
+	pointer-events: none;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+
+/* --- Classic editor context --- */
+.ai-slug-indicator {
+	margin-left: 10px;
+}
+
+.haayal-regen-wrap {
+	display: inline-flex;
+	align-items: center;
+	margin-left: 8px;
+}
+
+.haayal-classic-bulk-link {
+	margin-left: 8px;
+}
+
+/* --- Term edit context --- */
+.haayal-term-badge-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	margin: 6px 0 0;
+}
+
+/* --- Gutenberg sidebar context --- */
+.haayal-ai-slug-badge {
+	margin-top: 4px;
+}
+
+.haayal-inline-regenerate {
+	margin-top: 4px;
+}
+
+.haayal-ai-slug-inline-wrap {
+	padding: 0 16px 8px;
+}
+
+.haayal-ai-slug-popover-ui {
+	padding: 8px 0 0;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	align-items: flex-start;
+}
