@@ -1,7 +1,7 @@
 <?php
 // Plugin Name: Ailo - AI Slug Translator
 // Description: Automatically generate English slugs for new posts, pages, CPTs, and taxonomy terms based on their non-english titles using AI.
-// Version: 1.0
+// Version: 1.0.1
 // Author: Elchanan Levavi
 // Author URI: https://ha-ayal.co.il
 // Plugin URI: https://wordpress.org/plugins/haayal-ai-slug-translator/

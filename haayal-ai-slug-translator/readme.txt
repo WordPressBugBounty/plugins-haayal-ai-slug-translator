@@ -3,7 +3,7 @@ Contributors: elchananlevavi
 Tags: SEO, slugs, translation, OpenAI, multilingual
 Requires at least: 5.0
 Tested up to: 7.0
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -134,6 +134,7 @@ Slug translation will stop unless you connect your AI provider API key. You’ll
 
 = Can I Translate Slugs in Bulk? =
 Yes! The Bulk Translation tab lets you translate existing post and term slugs in batches. The plugin can also create 301 redirects automatically to preserve SEO. You can review and manage all redirects in the dedicated Redirects tab.
+For bulk translations, you'll need to connect your own AI provider.
 
 ---
 

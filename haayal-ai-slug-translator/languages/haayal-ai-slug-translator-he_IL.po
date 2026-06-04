@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ailo - AI Slug Translator 1.0\n"
 "POT-Creation-Date: 2026-03-25 10:36\n"
-"PO-Revision-Date: 2026-06-03 14:52+0300\n"
+"PO-Revision-Date: 2026-06-03 16:51+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: he_IL\n"
@@ -1055,7 +1055,7 @@ msgstr "שמרו על כתובות ה-URL שלכם נקיות, קריאות ונ
 
 #: includes/class-ai-slug-notices.php:68
 msgid "Ailo can automatically translate slugs into English for all content types and taxonomy terms when they're published, and also lets you update existing slugs in bulk using the Bulk Translation tool."
-msgstr "Ailo יכול לתרגם אוטומטית כתובות URL לאנגלית עבור כל סוגי התוכן ומונחי הטקסונומיה בעת פרסומם, וגם מאפשר לעדכן כתובות קיימות בכמות גדולה באמצעות כלי התרגום הגורף."
+msgstr "Ailo יכול לתרגם אוטומטית כתובות לאנגלית עבור כל סוגי התוכן ומונחי הטקסונומיה כשהם מתפרסמים, וגם מאפשר לך לעדכן כתובות קיימות בבת אחת, באמצעות כלי \"תרגום בבת אחת\"."
 
 #: includes/class-ai-slug-notices.php:100
 msgid "Are you enjoying the slugs I'm generating for you? If so, I'd be incredibly grateful if you could give me a 5-star review. It only takes a moment and means the world!"
@@ -1109,3 +1109,38 @@ msgstr "לעבור להגדרות"
 #: includes/class-ai-slug-bulk.php:186
 msgid "How to get an API key"
 msgstr "איך מקבלים מפתח API"
+
+#: includes/class-ai-slug-settings.php:194
+msgid "Plain permalinks detected — Ailo is fully inactive"
+msgstr "זוהה מבנה קישורים פשוט - Ailo לא פעיל"
+
+#: includes/class-ai-slug-settings.php:200
+#, php-format
+msgid "Your site is currently set to <strong>Plain</strong> permalinks, which do not support custom slugs. While this setting is active, <strong>no slug translation will occur</strong> for any post type or taxonomy term, no AI badge will appear in the editor, and bulk translation is unavailable.<br>To activate Ailo, please <a href=\"%s\">update your permalink structure</a> to any option other than \"Plain\"."
+msgstr "האתר שלך מוגדר כרגע עם מבנה קישורים <strong>פשוט</strong>, שאינו תומך בכתובות מותאמות אישית. כל עוד הגדרה זו פעילה, <strong>לא מתורגמות כתובות</strong> עבור שום סוג תוכן או מונח טקסונומיה, לא תופיע תגית AI בעורך, ותרגום בבת אחת אינו זמין.<br>כדי להפעיל את Ailo יש<a href=\"%s\">לשנות את מבנה הקישורים הקבועים</a> לכל אפשרות מלבד \"פשוט\"."
+
+#: includes/class-ai-slug-settings.php:207 includes/class-ai-slug-bulk.php:159
+msgid "Go to Permalink Settings"
+msgstr "עבור להגדרות מבנה קישורים"
+
+#: includes/class-ai-slug-notices.php:79
+msgid "Ailo – AI Slug Translator is inactive"
+msgstr "Ailo – מתרגם כתובות AI אינו פעיל"
+
+#: includes/class-ai-slug-notices.php:84
+#, php-format
+msgid "Your site uses <strong>Plain permalinks</strong>, which do not support custom slugs. Slug translation, badge indicators, and bulk translation are all disabled. To activate Ailo, <a href=\"%s\">change your permalink structure</a> to any option other than \"Plain\"."
+msgstr "האתר שלך משתמש במבנה קישורים <strong>פשוט</strong>, שאינו תומך בכתובות מותאמות אישית. תרגום כתובות, תגיות מצב ותרגום בבת אחת מושבתים. כדי להפעיל את Ailo, <a href=\"%s\">צריך לשנות את מבנה הקישורים </a> לכל אפשרות מלבד \"רגיל\"."
+
+#: includes/class-ai-slug-bulk.php:146
+msgid "Bulk translation is unavailable"
+msgstr "תרגום בבת אחת אינו זמין"
+
+#: includes/class-ai-slug-bulk.php:152
+#, php-format
+msgid "Your site uses <strong>Plain permalinks</strong>, which do not support custom slugs. Bulk translation has no effect in this mode. To use this feature, <a href=\"%s\">change your permalink structure</a> to any option other than \"Plain\"."
+msgstr "האתר שלך משתמש במבנה קישורים <strong>פשוט</strong>, שאינו תומך בכתובות מותאמות אישית. לתרגום בבת אחת אין השפעה במצב זה. כדי להשתמש בתכונה זו, <a href=\"%s\">צריך לשנות את מבנה הקישורים </a> לכל אפשרות מלבד \"פשוט\"."
+
+#: includes/class-ai-slug-posts.php:455
+msgid "Post type not enabled."
+msgstr "סוג הפוסט אינו מופעל."
