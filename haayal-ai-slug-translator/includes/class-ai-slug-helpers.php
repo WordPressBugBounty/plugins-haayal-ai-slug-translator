@@ -87,68 +87,98 @@ class Haayal_AI_Slug_Helpers {
      * @return string|null The translated and sanitized slug, or null if the request fails.
      */
     public static function get_translated_slug( $title, $api_key, $max_tokens = 20 ) {
-        $response = wp_remote_post(
-            HAAYAL_AI_SLUG_OPENAI_ENDPOINT,
-            [
-                'timeout' => HAAYAL_AI_SLUG_API_TIMEOUT,
-                'headers' => [
-                    'Authorization' => 'Bearer ' . $api_key,
-                    'Content-Type'  => 'application/json',
-                ],
-                'body' => wp_json_encode([
-                    'model' => HAAYAL_AI_SLUG_DEFAULT_MODEL,
-                    'messages' => [
-                        [
-                            'role' => 'user',
-                            'content' => sprintf(
-                                'Translate and simplify the following title to an English slug, limit to 1-4 words, lowercase and replace spaces with hyphens: "%s"',
-                                $title
-                            )
-                        ]
-                    ],
-                    'max_tokens' => $max_tokens
-                ])
-            ]
-        );        
+        $models = HAAYAL_AI_SLUG_TRANSLATION_MODELS;
+        $last_error = '';
 
-        if ( is_wp_error( $response ) ) {
-            Haayal_AI_Slug_Log::add_entry(
-                sprintf(
-                    // Translators: %s is the error message returned by the OpenAI API.
-                    __( 'Failed to generate slug. Error communicating with OpenAI API: %s', 'haayal-ai-slug-translator' ),
-                    $response->get_error_message()
-                ),
-                $title
+        foreach ( $models as $model ) {
+            $response = wp_remote_post(
+                HAAYAL_AI_SLUG_OPENAI_ENDPOINT,
+                [
+                    'timeout' => HAAYAL_AI_SLUG_API_TIMEOUT,
+                    'headers' => [
+                        'Authorization' => 'Bearer ' . $api_key,
+                        'Content-Type'  => 'application/json',
+                    ],
+                    'body' => wp_json_encode( [
+                        'model'      => $model,
+                        'messages'   => [
+                            [
+                                'role'    => 'user',
+                                'content' => sprintf(
+                                    'Translate and simplify the following title to an English slug, limit to 1-4 words, lowercase and replace spaces with hyphens: "%s"',
+                                    $title
+                                ),
+                            ],
+                        ],
+                        'max_tokens' => $max_tokens,
+                    ] ),
+                ]
             );
 
-            return null;
-        }
-
-        $body = json_decode( wp_remote_retrieve_body( $response ), true );
-
-        if ( ! isset( $body['choices'] ) || ! is_array( $body['choices'] ) || empty( $body['choices'][0]['message']['content'] ) ) {
-            if ( ! empty( $body['error']['message'] ) ) {
-                $response_details = self::fix_api_encoding( $body['error']['message'] );
-            } elseif ( isset( $body ) ) {
-                $response_details = wp_json_encode( $body, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES );
-            } else {
-                $response_details = __( 'No response body.', 'haayal-ai-slug-translator' );
+            if ( is_wp_error( $response ) ) {
+                $last_error = $response->get_error_message();
+                continue;
             }
 
-            Haayal_AI_Slug_Log::add_entry(
-                sprintf(
-                    // Translators: %s is the detailed response returned by the API when no valid translation is found.
-                    __( 'Failed to generate slug. API response did not include a valid translation. Response details: %s', 'haayal-ai-slug-translator' ),
-                    $response_details
-                ),
-                $title
-            );
+            $code = (int) wp_remote_retrieve_response_code( $response );
+            $body = json_decode( wp_remote_retrieve_body( $response ), true );
 
-            return null;
+            // Auth errors — retrying another model won't help.
+            if ( $code === 401 || $code === 403 ) {
+                Haayal_AI_Slug_Log::add_entry(
+                    sprintf(
+                        // Translators: %s is the error message returned by the OpenAI API.
+                        __( 'Failed to generate slug. Error communicating with OpenAI API: %s', 'haayal-ai-slug-translator' ),
+                        ! empty( $body['error']['message'] ) ? self::fix_api_encoding( $body['error']['message'] ) : $code
+                    ),
+                    $title
+                );
+                return null;
+            }
+
+            // Quota/rate-limit errors — retrying another model won't help.
+            if ( $code === 429 ) {
+                Haayal_AI_Slug_Log::add_entry(
+                    sprintf(
+                        // Translators: %s is the error message returned by the OpenAI API.
+                        __( 'Failed to generate slug. Error communicating with OpenAI API: %s', 'haayal-ai-slug-translator' ),
+                        ! empty( $body['error']['message'] ) ? self::fix_api_encoding( $body['error']['message'] ) : $code
+                    ),
+                    $title
+                );
+                return null;
+            }
+
+            // Model not found — try the next one.
+            if ( $code === 404 ) {
+                continue;
+            }
+
+            // Success.
+            if ( $code === 200 && ! empty( $body['choices'][0]['message']['content'] ) ) {
+                return sanitize_title( $body['choices'][0]['message']['content'] );
+            }
+
+            // Any other failure — capture the error and try the next model.
+            if ( ! empty( $body['error']['message'] ) ) {
+                $last_error = self::fix_api_encoding( $body['error']['message'] );
+            } elseif ( ! empty( $body ) ) {
+                $last_error = wp_json_encode( $body, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES );
+            } else {
+                $last_error = __( 'No response body.', 'haayal-ai-slug-translator' );
+            }
         }
-        
 
-        return sanitize_title( $body['choices'][0]['message']['content'] );
+        Haayal_AI_Slug_Log::add_entry(
+            sprintf(
+                // Translators: %s is the detailed response returned by the API when no valid translation is found.
+                __( 'Failed to generate slug. API response did not include a valid translation. Response details: %s', 'haayal-ai-slug-translator' ),
+                $last_error
+            ),
+            $title
+        );
+
+        return null;
     }
 
     /**
@@ -237,7 +267,16 @@ class Haayal_AI_Slug_Helpers {
         );
 
         $result = wp_ai_client_prompt( $prompt )
-            ->using_model_preference( 'gpt-4o-mini' )
+            ->using_model_preference(
+                'gemini-2.5-flash-lite',
+                'gpt-4.1-mini',
+                'claude-haiku-4-5',
+                'gemini-2.5-flash',
+                'gpt-4o-mini',
+                'qwen-plus',
+                'deepseek-v3',
+                'mistral-small'
+            )
             ->using_max_tokens( $max_tokens )
             ->generate_text();
 

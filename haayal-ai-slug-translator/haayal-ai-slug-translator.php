@@ -1,7 +1,7 @@
 <?php
 // Plugin Name: Ailo - AI Slug Translator
 // Description: Automatically generate English slugs for new posts, pages, CPTs, and taxonomy terms based on their non-english titles using AI.
-// Version: 1.0.1
+// Version: 1.0.2
 // Author: Elchanan Levavi
 // Author URI: https://ha-ayal.co.il
 // Plugin URI: https://wordpress.org/plugins/haayal-ai-slug-translator/
@@ -21,8 +21,8 @@ define('HAAYAL_AI_SLUG_TRANSLATOR_PLUGIN_VERSION', $haayal_plugin_data['Version'
 // Plugin constants
 define( 'HAAYAL_AI_SLUG_OPENAI_ENDPOINT', 'https://api.openai.com/v1/chat/completions' );
 define( 'HAAYAL_AI_SLUG_PROXY_ENDPOINT', 'https://dev.ha-ayal.co.il/slug-translator/wp-json/ai-slug/v1/translate' );
-define( 'HAAYAL_AI_SLUG_DEFAULT_MODEL', 'gpt-4o-mini' );
-define( 'HAAYAL_AI_SLUG_VALIDATION_MODEL', 'gpt-3.5-turbo' );
+define( 'HAAYAL_AI_SLUG_TRANSLATION_MODELS', [ 'gpt-4.1-mini', 'gpt-4o-mini', 'gpt-4.1' ] );
+define( 'HAAYAL_AI_SLUG_VALIDATION_MODEL', 'gpt-4.1-mini' );
 define( 'HAAYAL_AI_SLUG_API_TIMEOUT', 20 );
 define( 'HAAYAL_AI_SLUG_PROXY_TIMEOUT', 10 );
 define( 'HAAYAL_AI_SLUG_VALIDATION_TIMEOUT', 10 );
