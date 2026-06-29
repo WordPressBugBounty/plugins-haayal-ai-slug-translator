@@ -105,7 +105,7 @@ class Haayal_AI_Slug_Helpers {
                             [
                                 'role'    => 'user',
                                 'content' => sprintf(
-                                    'Translate and simplify the following title to an English slug, limit to 1-4 words, lowercase and replace spaces with hyphens: "%s"',
+                                    "Translate and simplify the following title to an English slug, limit to 1-4 words, lowercase and replace spaces with hyphens. If the input cannot be meaningfully translated (it is gibberish, random characters, or has no meaning), respond with exactly one word: untranslatable\n\nTitle: \"%s\"",
                                     $title
                                 ),
                             ],
@@ -156,7 +156,15 @@ class Haayal_AI_Slug_Helpers {
 
             // Success.
             if ( $code === 200 && ! empty( $body['choices'][0]['message']['content'] ) ) {
-                return sanitize_title( $body['choices'][0]['message']['content'] );
+                $slug = sanitize_title( $body['choices'][0]['message']['content'] );
+                if ( self::is_refusal_slug( $slug ) ) {
+                    Haayal_AI_Slug_Log::add_entry(
+                        __( 'Slug skipped — title is untranslatable (gibberish or random characters).', 'haayal-ai-slug-translator' ),
+                        $title
+                    );
+                    return null;
+                }
+                return $slug;
             }
 
             // Any other failure — capture the error and try the next model.
@@ -238,7 +246,15 @@ class Haayal_AI_Slug_Helpers {
             return null;
         }
 
-        return sanitize_title( $body['slug'] );
+        $slug = sanitize_title( $body['slug'] );
+        if ( self::is_refusal_slug( $slug ) ) {
+            Haayal_AI_Slug_Log::add_entry(
+                __( 'Slug skipped — title is untranslatable (gibberish or random characters).', 'haayal-ai-slug-translator' ),
+                $title
+            );
+            return null;
+        }
+        return $slug;
     }
 
     /**
@@ -262,7 +278,7 @@ class Haayal_AI_Slug_Helpers {
         }
 
         $prompt = sprintf(
-            'Translate and simplify the following title to an English slug, limit to 1-4 words, lowercase and replace spaces with hyphens: "%s"',
+            "Translate and simplify the following title to an English slug, limit to 1-4 words, lowercase and replace spaces with hyphens. If the input cannot be meaningfully translated (it is gibberish, random characters, or has no meaning), respond with exactly one word: untranslatable\n\nTitle: \"%s\"",
             $title
         );
 
@@ -300,7 +316,15 @@ class Haayal_AI_Slug_Helpers {
             return null;
         }
 
-        return sanitize_title( $result );
+        $slug = sanitize_title( $result );
+        if ( self::is_refusal_slug( $slug ) ) {
+            Haayal_AI_Slug_Log::add_entry(
+                __( 'Slug skipped — title is untranslatable (gibberish or random characters).', 'haayal-ai-slug-translator' ),
+                $title
+            );
+            return null;
+        }
+        return $slug;
     }
 
     /**
@@ -369,6 +393,10 @@ class Haayal_AI_Slug_Helpers {
         }
 
         return 'invalid';
+    }
+
+    private static function is_refusal_slug( $slug ) {
+        return $slug === 'untranslatable';
     }
 
     /**

@@ -3,7 +3,7 @@ Contributors: elchananlevavi
 Tags: SEO, slugs, translation, OpenAI, multilingual
 Requires at least: 5.0
 Tested up to: 7.0
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -153,6 +153,9 @@ If you created 301 redirects during bulk slug updates, those redirects may stop 
 6. Managing 301 redirects for updated URLs.
 
 == Changelog ==
+
+= 1.0 .3=
+- Fix: When a post title contains gibberish or random characters, the plugin no longer saves a garbled AI response as the slug - it skips translation and leaves the slug as-is.
 
 = 1.0 .2=
 - Enhancement: Added preferred model recommendations for WordPress Connectors.
