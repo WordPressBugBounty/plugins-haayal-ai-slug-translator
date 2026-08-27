@@ -58,7 +58,7 @@ class Haayal_AI_Slug_Helpers {
      * @return bool
      */
     public static function has_non_latin_chars( $str ) {
-        return (bool) preg_match( '/[^\x00-\x7F]/', rawurldecode( $str ) );
+        return (bool) preg_match( '/[^\x00-\x7F]/', rawurldecode( (string) $str ) );
     }
 
     public static function translate_and_track( $title, $api_key, $max_tokens = 20 ) {
@@ -297,11 +297,20 @@ class Haayal_AI_Slug_Helpers {
             ->generate_text();
 
         if ( is_wp_error( $result ) ) {
+            $error_message = $result->get_error_message();
+
+            // The AI Client SDK throws this generic RuntimeException when the model's
+            // entire token budget was spent on internal reasoning/thinking, leaving no
+            // visible text — not a connection or quota problem. Give a clearer hint.
+            if ( 'prompt_builder_error' === $result->get_error_code() && false !== strpos( $error_message, 'No text content found in first candidate' ) ) {
+                $error_message = __( 'The AI model used its entire token budget on internal reasoning and returned no visible text. Try increasing "Max Tokens" in Settings, or choose a different AI provider in WordPress Connectors.', 'haayal-ai-slug-translator' );
+            }
+
             Haayal_AI_Slug_Log::add_entry(
                 sprintf(
                     // Translators: %s is the error message returned by WordPress Connectors.
                     __( 'Failed to generate slug. WordPress Connectors error: %s', 'haayal-ai-slug-translator' ),
-                    $result->get_error_message()
+                    $error_message
                 ),
                 $title
             );

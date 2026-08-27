@@ -436,7 +436,7 @@ class Haayal_AI_Slug_Posts {
      * @return WP_REST_Response The response with the translated slug.
      */
     public function handle_translate_request( $request ) {
-        $title   = sanitize_text_field( $request->get_param( 'title' ) );
+        $title   = sanitize_text_field( (string) $request->get_param( 'title' ) );
         $post_id = absint( $request->get_param( 'post_id' ) );
 
         if ( empty( $title ) ) {

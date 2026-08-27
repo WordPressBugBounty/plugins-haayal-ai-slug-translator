@@ -419,7 +419,9 @@ class Haayal_AI_Slug_Settings {
                             5 => '5',
                             10 => '10',
                             30 => '30',
-                            40 => '40'
+                            40 => '40',
+                            60 => '60',
+                            80 => '80'
                         ];
                         $max_tokens = $settings['max_tokens'] ?? 20;
                         foreach ( $options as $value => $label ) {

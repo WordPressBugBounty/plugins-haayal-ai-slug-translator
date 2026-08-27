@@ -2,8 +2,8 @@
 Contributors: elchananlevavi
 Tags: SEO, slugs, translation, OpenAI, multilingual
 Requires at least: 5.0
-Tested up to: 7.0
-Stable tag: 1.0.3
+Tested up to: 7.1
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -154,13 +154,18 @@ If you created 301 redirects during bulk slug updates, those redirects may stop 
 
 == Changelog ==
 
-= 1.0 .3=
+= 1.0.4=
+- Tested and confirmed compatibility with WordPress 7.1.
+- Minor bug fixes - Improved compatibility with PHP 8.1 and above. Thanks vincentczb.
+- Improved the Error Log message shown when a valid translation cannot be received due to token limits or an incompatible model being used in Connectors.
+
+= 1.0.3=
 - Fix: When a post title contains gibberish or random characters, the plugin no longer saves a garbled AI response as the slug - it skips translation and leaves the slug as-is.
 
-= 1.0 .2=
+= 1.0.2=
 - Enhancement: Added preferred model recommendations for WordPress Connectors.
 
-= 1.0 .1=
+= 1.0.1=
 - Minor bug fixes.
 
 = 1.0 =
@@ -219,7 +224,3 @@ Minor UI improvements and clearer helper text
 
 = 0.6 =
 - Initial release with support for automatic slug translation using OpenAI.
-
-
-
-
