@@ -147,6 +147,13 @@ class Haayal_AI_Slug_Settings {
                     __( 'OpenAI API key is valid, but you have no remaining credit.', 'haayal-ai-slug-translator' ),
                     'notice-warning'
                 );
+            } elseif ( $status === 'unverified' ) {
+                add_settings_error(
+                    'haayal_slug_translator_settings',
+                    'unverified_api_key',
+                    __( 'Could not verify the OpenAI API key right now (temporary error or limited model access). The key was saved — try translating a title to confirm it works.', 'haayal-ai-slug-translator' ),
+                    'notice-warning'
+                );
             } else {
                 add_settings_error(
                     'haayal_slug_translator_settings',

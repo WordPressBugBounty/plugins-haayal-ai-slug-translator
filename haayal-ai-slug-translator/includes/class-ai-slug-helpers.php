@@ -6,6 +6,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 class Haayal_AI_Slug_Helpers {
 
     /**
+     * True if the most recent translate_and_track() call ended with the AI
+     * declaring the title untranslatable (gibberish / meaningless).
+     *
+     * @var bool
+     */
+    private static $last_untranslatable = false;
+
+    /**
+     * Whether the last translation attempt was refused as untranslatable.
+     *
+     * @return bool
+     */
+    public static function was_last_untranslatable() {
+        return self::$last_untranslatable;
+    }
+
+    /**
      * Automatically routes the slug translation request based on the selected connection method.
      *
      * Supports three methods: WordPress Connectors (WP 7+), direct OpenAI API key, and free proxy.
@@ -67,6 +84,8 @@ class Haayal_AI_Slug_Helpers {
             return null;
         }
 
+        self::$last_untranslatable = false;
+
         $slug = self::get_translated_slug_auto( $title, $api_key, $max_tokens );
 
         if ( $slug ) {
@@ -110,7 +129,8 @@ class Haayal_AI_Slug_Helpers {
                                 ),
                             ],
                         ],
-                        'max_tokens' => $max_tokens,
+                        'max_completion_tokens' => $max_tokens,
+                        'reasoning_effort'      => 'none',
                     ] ),
                 ]
             );
@@ -158,6 +178,7 @@ class Haayal_AI_Slug_Helpers {
             if ( $code === 200 && ! empty( $body['choices'][0]['message']['content'] ) ) {
                 $slug = sanitize_title( $body['choices'][0]['message']['content'] );
                 if ( self::is_refusal_slug( $slug ) ) {
+                self::$last_untranslatable = true;
                     Haayal_AI_Slug_Log::add_entry(
                         __( 'Slug skipped — title is untranslatable (gibberish or random characters).', 'haayal-ai-slug-translator' ),
                         $title
@@ -248,6 +269,7 @@ class Haayal_AI_Slug_Helpers {
 
         $slug = sanitize_title( $body['slug'] );
         if ( self::is_refusal_slug( $slug ) ) {
+                self::$last_untranslatable = true;
             Haayal_AI_Slug_Log::add_entry(
                 __( 'Slug skipped — title is untranslatable (gibberish or random characters).', 'haayal-ai-slug-translator' ),
                 $title
@@ -285,10 +307,9 @@ class Haayal_AI_Slug_Helpers {
         $result = wp_ai_client_prompt( $prompt )
             ->using_model_preference(
                 'gemini-2.5-flash-lite',
-                'gpt-4.1-mini',
+                'gpt-6-luna',
                 'claude-haiku-4-5',
                 'gemini-2.5-flash',
-                'gpt-4o-mini',
                 'qwen-plus',
                 'deepseek-v3',
                 'mistral-small'
@@ -327,6 +348,7 @@ class Haayal_AI_Slug_Helpers {
 
         $slug = sanitize_title( $result );
         if ( self::is_refusal_slug( $slug ) ) {
+                self::$last_untranslatable = true;
             Haayal_AI_Slug_Log::add_entry(
                 __( 'Slug skipped — title is untranslatable (gibberish or random characters).', 'haayal-ai-slug-translator' ),
                 $title
@@ -363,7 +385,10 @@ class Haayal_AI_Slug_Helpers {
      * Checks the status of an OpenAI API key.
      *
      * @param string $api_key The OpenAI API key.
-     * @return string One of: 'valid', 'insufficient_quota', 'invalid'
+     * @return string One of: 'valid', 'insufficient_quota', 'invalid', 'unverified'.
+     *                'invalid' is returned only when OpenAI rejects the key itself (401);
+     *                any other failure (network error, timeout, 5xx, rate limit, model access)
+     *                is 'unverified' since it says nothing about the key.
      */
     public static function check_api_key_status( $api_key ) {
         $response = wp_remote_post(
@@ -377,21 +402,28 @@ class Haayal_AI_Slug_Helpers {
                 'body' => wp_json_encode([
                     'model' => HAAYAL_AI_SLUG_VALIDATION_MODEL,
                     'messages' => [
-                        [ 'role' => 'user', 'content' => 'Hello' ]
+                        [ 'role' => 'user', 'content' => 'Reply with: ok' ]
                     ],
-                    'max_tokens' => 1,
+                    // gpt-6-luna rejects tiny output budgets (a 1-token cap returned 400 and was
+                    // misread as an invalid key), so use a small but accepted budget.
+                    'max_completion_tokens' => 16,
+                    'reasoning_effort'      => 'none',
                 ]),
             ]
         );
 
         if ( is_wp_error( $response ) ) {
-            return 'invalid';
+            return 'unverified';
         }
 
         $code = wp_remote_retrieve_response_code( $response );
 
         if ( $code === 200 ) {
             return 'valid';
+        }
+
+        if ( $code === 401 ) {
+            return 'invalid';
         }
 
         if ( $code === 429 ) {
@@ -401,7 +433,7 @@ class Haayal_AI_Slug_Helpers {
             }
         }
 
-        return 'invalid';
+        return 'unverified';
     }
 
     private static function is_refusal_slug( $slug ) {

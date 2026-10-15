@@ -3,7 +3,7 @@ Contributors: elchananlevavi
 Tags: SEO, slugs, translation, OpenAI, multilingual
 Requires at least: 5.0
 Tested up to: 7.1
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -153,6 +153,11 @@ If you created 301 redirects during bulk slug updates, those redirects may stop 
 6. Managing 301 redirects for updated URLs.
 
 == Changelog ==
+
+= 1.0.5=
+- Enhancement: Moved from GPT-4 models to GPT-6 Luna.
+- Update: Proxy and author site moved to the new domain.
+- Fix: Duplicate Error Log entries for untranslatable titles.
 
 = 1.0.4=
 - Tested and confirmed compatibility with WordPress 7.1.

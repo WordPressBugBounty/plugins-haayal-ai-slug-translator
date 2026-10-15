@@ -389,6 +389,16 @@ msgstr ""
 msgid "Failed to generate slug. WordPress Connectors returned an empty response."
 msgstr ""
 
+#: includes/class-ai-slug-helpers.php:162
+#: includes/class-ai-slug-helpers.php:252
+#: includes/class-ai-slug-helpers.php:331
+msgid "Slug skipped — title is untranslatable (gibberish or random characters)."
+msgstr ""
+
+#: includes/class-ai-slug-helpers.php:306
+msgid "The AI model used its entire token budget on internal reasoning and returned no visible text. Try increasing \"Max Tokens\" in Settings, or choose a different AI provider in WordPress Connectors."
+msgstr ""
+
 #: includes/class-ai-slug-user-guide.php:14
 msgid "Why to use this plugin?"
 msgstr ""

@@ -60,6 +60,11 @@ class Haayal_AI_Slug_Posts {
 
         $title = $data['post_title'];
 
+        // Title was already judged untranslatable (e.g. by the Gutenberg REST call) — don't retry and re-log.
+        if ( ! empty( $postarr['ID'] ) && get_post_meta( $postarr['ID'], '_slug_untranslatable_title', true ) === md5( sanitize_text_field( $title ) ) ) {
+            return $data;
+        }
+
         // Generate a new slug using the AI
         $api_key = $settings['api_key'];
 
@@ -79,6 +84,8 @@ class Haayal_AI_Slug_Posts {
             update_post_meta( $postarr['ID'], '_generated_slug', $slug );
             update_post_meta( $postarr['ID'], $this->slug_meta_key, 'ai' );
             $data['post_name'] = $slug;
+        } elseif ( ! empty( $postarr['ID'] ) && Haayal_AI_Slug_Helpers::was_last_untranslatable() ) {
+            update_post_meta( $postarr['ID'], '_slug_untranslatable_title', md5( sanitize_text_field( $title ) ) );
         }
 
         Haayal_AI_Slug_Log::set_context();
@@ -465,6 +472,10 @@ class Haayal_AI_Slug_Posts {
         Haayal_AI_Slug_Log::set_context();
 
         if ( ! $slug ) {
+            // Remember untranslatable titles so the save hook doesn't retry and log a second entry.
+            if ( $post_id && Haayal_AI_Slug_Helpers::was_last_untranslatable() ) {
+                update_post_meta( $post_id, '_slug_untranslatable_title', md5( sanitize_text_field( $title ) ) );
+            }
             return new WP_REST_Response( [ 'error' => __( 'Translation failed or title is already in English.', 'haayal-ai-slug-translator' ) ], 422 );
         }
 

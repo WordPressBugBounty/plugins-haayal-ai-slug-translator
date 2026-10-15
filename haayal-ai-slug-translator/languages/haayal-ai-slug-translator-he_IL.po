@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ailo - AI Slug Translator 1.0\n"
 "POT-Creation-Date: 2026-03-25 10:36\n"
-"PO-Revision-Date: 2026-08-27 12:01+0300\n"
+"PO-Revision-Date: 2026-08-27 12:03+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: he_IL\n"
@@ -371,6 +371,16 @@ msgstr "יצירת כתובת נכשלה. שגיאת WordPress Connectors:‏ %s
 #: includes/class-ai-slug-helpers.php:247
 msgid "Failed to generate slug. WordPress Connectors returned an empty response."
 msgstr "יצירת כתובת נכשלה. WordPress Connectors החזיר תגובה ריקה."
+
+#: includes/class-ai-slug-helpers.php:162
+#: includes/class-ai-slug-helpers.php:252
+#: includes/class-ai-slug-helpers.php:331
+msgid "Slug skipped — title is untranslatable (gibberish or random characters)."
+msgstr "הכתובת לא תורגמה - הכותרת אינה ניתנת לתרגום (ג'יבריש או תווים אקראיים)."
+
+#: includes/class-ai-slug-helpers.php:306
+msgid "The AI model used its entire token budget on internal reasoning and returned no visible text. Try increasing \"Max Tokens\" in Settings, or choose a different AI provider in WordPress Connectors."
+msgstr "מודל ה-AI ניצל את כל מכסת הטוקנים שלו על חשיבה פנימית ולא החזיר טקסט גלוי. נסה להגדיל את \"מקסימום טוקנים\" בהגדרות, או לבחור ספק AI אחר ב-WordPress Connectors."
 
 #: includes/class-ai-slug-user-guide.php:14
 msgid "Why to use this plugin?"
